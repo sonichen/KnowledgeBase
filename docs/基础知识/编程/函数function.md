@@ -1,0 +1,84 @@
+## 函数
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.1;
+
+contract FunctionIntro {
+    /*
+    external:仅在外部可见(仅可修饰函数)——就是说,仅可用于消息调用(即使在合约内调用,也只能通过 this.func 的方式) internal
+    internal:仅在内部可见。
+    pure: 用于标识一个函数不会访问或修改合约的状态，并且不会与其他合约进行交互。
+    view: 用于标识一个函数不会修改合约的状态。然而，“view”函数与“pure”函数的区别在于，“view”函数可以访问合约的状态，但不会修改它。
+    */
+    function add(uint256 x, uint256 y) external pure returns (uint256) {
+        return x + y;
+    }
+
+    function sub(uint256 x, uint256 y) external pure returns (uint256) {
+        return x - y;
+    }
+}
+
+```
+
+
+
+## View and Pure Functions
+
+Getter functions can be declared `view` or `pure`.
+
+`View` function declares that no state will be changed.
+
+`Pure` function declares that no state variable will be changed or read.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.1;
+
+contract ViewAndPureFunctions {
+    uint256 public num;
+
+    function viewFunc() external view returns (uint256) {
+        return num;
+    }
+
+    function pureFunc() external pure returns (uint256) {
+        return 1;
+    }
+
+    uint256 public x = 1;
+
+    // 不改变state variable
+    function addToX(uint256 y) public view returns (uint256) {
+        return x + y;
+    }
+
+    // 不读取不改变state variable
+    function add(uint256 i, uint256 j) public pure returns (uint256) {
+        return i + j;
+    }
+}
+
+```
+
+案例 Counter
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.1;
+
+contract Counter {
+    uint256 public count;
+
+    function inc() external {
+        count += 1;
+    }
+
+    function dec() external {
+        count -= 1;
+    }
+}
+
+```
+
