@@ -2,32 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/sonichen/LearningWeb3.0/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/sonichen/LearningWeb3.0/About/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <loc>https://github.com/sonichen/LearningWeb3.0/Demo/Rust%E5%AE%9E%E7%8E%B0%E5%8C%BA%E5%9D%97%E9%93%BE/Basic%20Prototype/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/sonichen/LearningWeb3.0/Project/Rust%E5%AE%9E%E7%8E%B0%E5%8C%BA%E5%9D%97%E9%93%BE/Rust%E5%AE%9E%E7%8E%B0%E5%8C%BA%E5%9D%97%E9%93%BE/</loc>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%AF%BC%E8%88%AA/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/Solidity/HelloWorld/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/Solidity/%E5%87%BD%E6%95%B0/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/Solidity/%E5%8F%98%E9%87%8F/</loc>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A6%82%E5%BF%B5/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E5%8E%9F%E7%90%86%E4%B9%A6/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A6%82%E5%BF%B5/%E7%B2%BE%E9%80%9A%E4%BB%A5%E5%A4%AA%E5%9D%8A/1.%E4%BB%80%E4%B9%88%E6%98%AF%E4%BB%A5%E5%A4%AA%E5%9D%8A/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%A6%82%E5%BF%B5/%E7%B2%BE%E9%80%9A%E4%BB%A5%E5%A4%AA%E5%9D%8A/%E6%9C%AF%E8%AF%AD/</loc>
-         <lastmod>2023-09-16</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

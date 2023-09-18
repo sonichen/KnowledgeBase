@@ -12,14 +12,19 @@ nav:
         - 基础知识/概念/以太坊原理书.md
         - 精通以太坊:
           - 基础知识/概念/精通以太坊/1.什么是以太坊.md
-      # - 编程:
-  #   - Project/index.md
-  #   - Project/Rust.md
-  #   - Project/JavaWeb.md
-  #   - Project/Others.md
-
-
-
+      - 编程:
+        - 基础知识/Solidity/0.备注.md
+        - 基础知识/Solidity/1.HelloWorld.md
+        - 基础知识/Solidity/2.变量.md
+        - 基础知识/Solidity/3.函数.md
+        - 基础知识/Solidity/4.IfElse.md
+        - 基础知识/Solidity/5.FunctionModifier.md
+        - 基础知识/Solidity/6.Error.md
+        - 基础知识/Solidity/7.循环.md
+  - Project:
+      - Project/Rust实现区块链/Rust实现区块链.md
+  - 阅读:
+      - 阅读/从架构维度看Web2.0与Web3.0应用之别.md
 # [UI]
 ## [top]
 theme:
