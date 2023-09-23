@@ -12,20 +12,20 @@
         <meta name="author" content="Soni">
       
       
-        <link rel="canonical" href="https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/Solidity/0.%E5%A4%87%E6%B3%A8/">
+        <link rel="canonical" href="https://github.com/sonichen/LearningWeb3.0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/Solidity/3.Function/">
       
       
-        <link rel="prev" href="../../%E6%A6%82%E5%BF%B5/%E7%B2%BE%E9%80%9A%E4%BB%A5%E5%A4%AA%E5%9D%8A/1.%E4%BB%80%E4%B9%88%E6%98%AF%E4%BB%A5%E5%A4%AA%E5%9D%8A/">
+        <link rel="prev" href="../2.Variable/">
       
       
-        <link rel="next" href="../1.HelloWorld/">
+        <link rel="next" href="../4.IfElse/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>0.备注 - LearningWeb3.0</title>
+        <title>3.Function - LearningWeb3.0</title>
       
     
     
@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              0.备注
+              3.Function
             
           </span>
         </div>
@@ -514,17 +519,43 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
-          编程
+          Solidity
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
-          编程
+          Solidity
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -532,19 +563,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        0.备注
+    <li class="md-nav__item">
+      <a href="../0.note/" class="md-nav__link">
+        0.note
       </a>
-      
     </li>
   
 
@@ -570,8 +593,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../2.%E5%8F%98%E9%87%8F/" class="md-nav__link">
-        2.变量
+      <a href="../2.Variable/" class="md-nav__link">
+        2.Variable
       </a>
     </li>
   
@@ -582,11 +605,76 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../3.%E5%87%BD%E6%95%B0/" class="md-nav__link">
-        3.函数
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          3.Function
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        3.Function
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-and-pure-functions" class="md-nav__link">
+    View and Pure Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    案例
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    传参和返回值
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -640,8 +728,190 @@
   
   
     <li class="md-nav__item">
-      <a href="../7.%E5%BE%AA%E7%8E%AF/" class="md-nav__link">
-        7.循环
+      <a href="../7.Loop/" class="md-nav__link">
+        7.Loop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.Array/" class="md-nav__link">
+        数组
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.Mapping/" class="md-nav__link">
+        Mapping
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.Struct/" class="md-nav__link">
+        10.Struct
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.Enum/" class="md-nav__link">
+        11.Enum
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.Deploy%20Any%20Contract/" class="md-nav__link">
+        12.Deploy Any Contract
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.Data%20Location/" class="md-nav__link">
+        13.Data Location
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14.Example_ToDoList/" class="md-nav__link">
+        14.Example ToDoList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15.Event/" class="md-nav__link">
+        15.Event
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16.Inheritance/" class="md-nav__link">
+        16.Inheritance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17.Visibility/" class="md-nav__link">
+        17.Visibility
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18.Immutable/" class="md-nav__link">
+        18.Immutable
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../基础知识/Solidity/19.Payable.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20.fallback/" class="md-nav__link">
+        20.fallback
       </a>
     </li>
   
@@ -789,6 +1059,49 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-and-pure-functions" class="md-nav__link">
+    View and Pure Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    案例
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    传参和返回值
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -805,7 +1118,7 @@
 
 
   
-    <a href="https://github.com/sonichen/LearningWeb3.0/edit/main/docs/基础知识/Solidity/0.备注.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/sonichen/LearningWeb3.0/edit/main/docs/基础知识/Solidity/3.Function.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -813,11 +1126,186 @@
   
 
 
-  <h1>0.备注</h1>
+  <h1>3.Function</h1>
 
-<p>编译器：<a href="https://remix.ethereum.org/">Remix</a></p>
-<p>Resources
-Solidity0.8课程：<a href="https://www.youtube.com/watch?v=xv9OmztShIw&amp;list=PLO5VPQH6OWdVQwpQfw9rZ67O6Pjfo6q-p&amp;index=1">Solidity</a></p>
+<h2 id="_1">函数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>函数由关键字 <code>function</code> 声明，后面跟<strong>函数名</strong>、<strong>参数</strong>、<strong>可视范围</strong>、<strong>状态可变性</strong>、<strong>返回值</strong>的定义。函数可以定义在合约内部，也可以定义在合约外部。</p>
+<ul>
+<li>function: 声明函数的固定关键字</li>
+<li>fnName : 函数名，推荐小驼峰写法,更多参考: 合约编码规范 (<code>TODO:</code>)</li>
+<li><code>&lt;parameter list&gt;</code> : 参数列表(参数类型 + 参数名字)</li>
+<li><code>&lt;visibility&gt;</code>: 可见性</li>
+<li><code>public</code>：可以从合约内外访问。</li>
+<li><code>external</code>：仅可从合约外部访问。这个修饰符只能用于函数。</li>
+<li><code>internal</code>：只能从当前合约或从继承合约访问。</li>
+<li><code>private</code>：只能从当前合约访问。</li>
+<li><code>&lt;state mutability&gt;</code>: 状态可变性</li>
+<li><code>pure</code>：<strong>声明函数不会修改或读取任何状态变量，也不会与区块链交互</strong>。这意味着它只依赖于传递给函数的参数，而不依赖于合约的状态。这种函数可以被其他函数调用，而不需要发送事务。如果函数尝试修改状态变量或与区块链交互，则编译器会发出警告。</li>
+<li><code>view</code>：声明函数<strong>不会修改任何状态变量，但会读取状态变量</strong>。这意味着它只依赖于合约的当前状态，而不会修改它。这种函数可以被其他函数调用，而不需要发送事务。如果函数尝试修改状态变量或与区块链交互，则编译器会发出警告。</li>
+<li><code>payable</code>：声明函数可以接收以太币，并将其添加到合约的余额中。这种函数可以被其他地址发送以太币的事务调用。如果函数尝试修改状态变量或与区块链交互，则编译器会发出警告。</li>
+<li>不写 <code>pure/view/payable</code> 中任何一个：这意味着函数既可以读取也可以写入状态变量。这种函数可以被其他函数或地址调用，并且可以修改合约的状态。</li>
+<li>
+<p><code>returns (&lt;return types&gt;)</code>:返回值和返回参数类型</p>
+</li>
+<li>
+<p>传参</p>
+</li>
+<li>
+<p>值类型</p>
+</li>
+<li>
+<p>引用类型（字符串，数组）</p>
+<ul>
+<li>
+<p>默认是为calldata类型</p>
+</li>
+<li>
+<p>在Solidity中，函数参数可以是"memory"或"calldata"类型。</p>
+</li>
+</ul>
+<p>"memory"类型表示参数值将在函数内部创建并存储在内存中，</p>
+<p>而"calldata"类型表示参数值将在函数调用期间<strong>从外部传入，并且只能读取而不能修改</strong>。</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// SPDX-License-Identifier: MIT</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.1</span><span class="p">;</span>
+
+<span class="k">contract</span><span class="w"> </span><span class="ni">FunctionIntro</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">    external:仅在外部可见(仅可修饰函数)——就是说,仅可用于消息调用(即使在合约内调用,也只能通过 this.func 的方式)  </span>
+<span class="cm">    internal:仅在内部可见。</span>
+<span class="cm">    pure: 用于标识一个函数不会访问或修改合约的状态，并且不会与其他合约进行交互。</span>
+<span class="cm">    view: 用于标识一个函数不会修改合约的状态。然而，“view”函数与“pure”函数的区别在于，“view”函数可以访问合约的状态，但不会修改它。</span>
+<span class="cm">    */</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">add</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">x</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">y</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span>x<span class="w"> </span><span class="o">+</span><span class="w"> </span>y<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">sub</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">x</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">y</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span>x<span class="w"> </span><span class="o">-</span><span class="w"> </span>y<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="view-and-pure-functions">View and Pure Functions<a class="headerlink" href="#view-and-pure-functions" title="Permanent link">&para;</a></h2>
+<p>Getter functions can be declared <code>view</code> or <code>pure</code>.</p>
+<p><code>View</code> function declares that no state will be changed.</p>
+<p><code>Pure</code> function declares that no state variable will be changed or read.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// SPDX-License-Identifier: MIT</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.1</span><span class="p">;</span>
+
+<span class="k">contract</span><span class="w"> </span><span class="ni">ViewAndPureFunctions</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="k">public </span><span class="nv">num</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">viewFunc</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span>num<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">pureFunc</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span><span class="m m-Decimal">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="k">public </span><span class="nv">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m m-Decimal">1</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// 不改变state variable</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">addToX</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">y</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span>x<span class="w"> </span><span class="o">+</span><span class="w"> </span>y<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// 不读取不改变state variable</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">add</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">i</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">j</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span>i<span class="w"> </span><span class="o">+</span><span class="w"> </span>j<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>案例 Counter</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// SPDX-License-Identifier: MIT</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.1</span><span class="p">;</span>
+
+<span class="k">contract</span><span class="w"> </span><span class="ni">Counter</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="k">public </span><span class="nv">count</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">inc</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span>count<span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="m m-Decimal">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">dec</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span>count<span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="m m-Decimal">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="constructor">Constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h2>
+<p>only called once when the contract is deployed</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// SPDX-License-Identifier: MIT</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.1</span><span class="p">;</span>
+
+<span class="c1">// Base contract X</span>
+<span class="k">contract</span><span class="w"> </span><span class="ni">X</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">address</span><span class="w"> </span><span class="k">public </span><span class="nv">owner</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="k">public </span><span class="nv">x</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">constructor</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">_x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span>owner<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">msg.sender</span><span class="p">;</span>
+<span class="w">        </span>x<span class="w"> </span><span class="o">=</span><span class="w"> </span>_x<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="image-20230918165905960" src="../assets/image-20230918165905960.png" /></p>
+<p><img alt="image-20230918165929619" src="../assets/image-20230918165929619.png" /></p>
+<h2 id="_2">案例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// SPDX-License-Identifier: MIT</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.1</span><span class="p">;</span>
+
+<span class="c1">// Base contract X</span>
+<span class="k">contract</span><span class="w"> </span><span class="ni">Ownable</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">address</span><span class="w"> </span><span class="k">public </span><span class="nv">owner</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span>owner<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">msg.sender</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// 创建function modifier， 只有owner才能call function</span>
+<span class="w">    </span><span class="kt">modifier</span><span class="w"> </span>onlyOwner<span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">require</span><span class="p">(</span><span class="k">msg.sender</span><span class="w"> </span><span class="o">==</span><span class="w"> </span>owner<span class="p">,</span><span class="w"> </span><span class="s2">&quot;not owner&quot;</span><span class="p">);</span>
+<span class="w">        </span>_<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">setOwner</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">_newOwner</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOwner<span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">require</span><span class="p">(</span>_newOwner<span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kt">address</span><span class="p">(</span><span class="m m-Decimal">0</span><span class="p">),</span><span class="w"> </span><span class="s2">&quot;invalid address&quot;</span><span class="p">);</span>
+<span class="w">        </span>owner<span class="w"> </span><span class="o">=</span><span class="w"> </span>_newOwner<span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">onlyOwnerCanCallThisFunc</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOwner<span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">anyOneCanCall</span><span class="p">()</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="_3">传参和返回值<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>函数可以有一个或者多个参数，也可以有一个或者多个返回值</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// SPDX-License-Identifier: MIT</span>
+<span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.1</span><span class="p">;</span>
+
+<span class="c1">// Base contract X</span>
+<span class="k">contract</span><span class="w"> </span><span class="ni">FunctionOutputs</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 传入多个参数，返回多个返回值</span>
+<span class="w">    </span><span class="c1">// 可以只指定返回值类型，不指定名字</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">returnMany</span><span class="p">()</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span><span class="p">(</span><span class="m m-Decimal">1</span><span class="p">,</span><span class="w"> </span><span class="kt">true</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// 可以指定返回值名字</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">named</span><span class="p">()</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">x</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nv">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">return</span><span class="w"> </span><span class="p">(</span><span class="m m-Decimal">1</span><span class="p">,</span><span class="w"> </span><span class="kt">true</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// 如果没有特别return，会返回指定的名字的参数的值</span>
+<span class="w">    </span><span class="kt">function</span><span class="w"> </span><span class="nv">assigned</span><span class="p">()</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">x</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nv">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span>x<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m m-Decimal">1</span><span class="p">;</span>
+<span class="w">        </span>b<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
