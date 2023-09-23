@@ -12,15 +12,31 @@ nav:
         - 基础知识/概念/以太坊原理书.md
         - 精通以太坊:
           - 基础知识/概念/精通以太坊/1.什么是以太坊.md
-      - 编程:
-        - 基础知识/Solidity/0.备注.md
+      - Solidity:
+        - 基础知识/Solidity/0.note.md
         - 基础知识/Solidity/1.HelloWorld.md
-        - 基础知识/Solidity/2.变量.md
-        - 基础知识/Solidity/3.函数.md
+        - 基础知识/Solidity/2.Variable.md
+        - 基础知识/Solidity/3.Function.md
         - 基础知识/Solidity/4.IfElse.md
         - 基础知识/Solidity/5.FunctionModifier.md
         - 基础知识/Solidity/6.Error.md
-        - 基础知识/Solidity/7.循环.md
+        - 基础知识/Solidity/7.Loop.md
+        - 基础知识/Solidity/8.Array.md
+        - 基础知识/Solidity/9.Mapping.md
+        - 基础知识/Solidity/10.Struct.md
+        - 基础知识/Solidity/11.Enum.md
+        - 基础知识/Solidity/12.Deploy Any Contract.md
+        - 基础知识/Solidity/13.Data Location.md
+        - 基础知识/Solidity/14.Example_ToDoList.md
+        - 基础知识/Solidity/15.Event.md
+        - 基础知识/Solidity/16.Inheritance.md
+        - 基础知识/Solidity/17.Visibility.md
+        - 基础知识/Solidity/18.Immutable.md
+        - 基础知识/Solidity/19.Payable.md
+        - 基础知识/Solidity/20.fallback.md
+
+
+
   - Project:
       - Project/Rust实现区块链/Rust实现区块链.md
   - 阅读:
