@@ -13,30 +13,33 @@ nav:
         - 精通以太坊:
           - 基础知识/概念/精通以太坊/1.什么是以太坊.md
       - Solidity:
-        - 基础知识/Solidity/0.note.md
-        - 基础知识/Solidity/1.HelloWorld.md
-        - 基础知识/Solidity/2.Variable.md
-        - 基础知识/Solidity/3.Function.md
-        - 基础知识/Solidity/4.IfElse.md
-        - 基础知识/Solidity/5.FunctionModifier.md
-        - 基础知识/Solidity/6.Error.md
-        - 基础知识/Solidity/7.Loop.md
-        - 基础知识/Solidity/8.Array.md
-        - 基础知识/Solidity/9.Mapping.md
-        - 基础知识/Solidity/10.Struct.md
-        - 基础知识/Solidity/11.Enum.md
-        - 基础知识/Solidity/12.Deploy Any Contract.md
-        - 基础知识/Solidity/13.Data Location.md
-        - 基础知识/Solidity/14.Example_ToDoList.md
-        - 基础知识/Solidity/15.Event.md
-        - 基础知识/Solidity/16.Inheritance.md
-        - 基础知识/Solidity/17.Visibility.md
-        - 基础知识/Solidity/18.Immutable.md
-        - 基础知识/Solidity/19.Payable.md
-        - 基础知识/Solidity/20.fallback.md
-
-
-
+        - 基础知识/Solidity/0.Solidity.md
+        - 基础知识/Solidity/1.FirstContract.md
+        - 基础知识/Solidity/2.Varibale.md
+        - 基础知识/Solidity/3.VariableType.md
+        - 基础知识/Solidity/4.Constants.md
+        - 基础知识/Solidity/5.Immutable.md
+        - 基础知识/Solidity/6.EtherANDWei.md
+        - 基础知识/Solidity/7.Gas.md
+        - 基础知识/Solidity/8.IfElse.md
+        - 基础知识/Solidity/9.Loop.md
+        - 基础知识/Solidity/10.Mapping.md
+        - 基础知识/Solidity/11.Array.md
+        - 基础知识/Solidity/12.Enum.md
+        - 基础知识/Solidity/13.struct.md
+        - 基础知识/Solidity/14.DataLocations.md
+        - 基础知识/Solidity/15.Function.md
+        - 基础知识/Solidity/16.FunctionModifier.md
+        - 基础知识/Solidity/17.Events.md
+        - 基础知识/Solidity/18.Constructor.md
+        - 基础知识/Solidity/19.Inheritance.md
+        - 基础知识/Solidity/20.Visibility.md
+        - 基础知识/Solidity/21.Interface.md
+        - 基础知识/Solidity/22.Error.md
+        - 基础知识/Solidity/23.DeployAnyContract.md
+        - 基础知识/Solidity/24.this.md
+        - 基础知识/Solidity/25.接收ETH.md
+        - 基础知识/Solidity/26.SendETH.md
   - Project:
       - Project/Rust实现区块链/Rust实现区块链.md
   - 阅读:
