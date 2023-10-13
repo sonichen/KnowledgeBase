@@ -1,9 +1,3 @@
----
-title: sensleak
-date: 2023-08-20 18:28:44
-permalink: /pages/18e00a/
----
-
 ## **敏感信息泄露扫描工具**
 
 sensleak 0.1.0是在我在参考gitleaks功能特点的基础上，用rust编写的敏感信息扫描工具，用于扫描Git仓库中的敏感数据，特别是针对嵌入在代码中的密码、API密钥、证书和私钥等敏感信息。基于命令行进行交互，提供REST API。
@@ -12,7 +6,7 @@ GitHub链接：
 
 sensleak 0.1.0: https://github.com/sonichen/sensleak-rs 
 
-sensleak: https://github.com/open-rust-initiative/sensleak-rs
+sensleak最新版本: https://github.com/open-rust-initiative/sensleak-rs
 
 ## **背景** 
 

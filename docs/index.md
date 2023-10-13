@@ -1,1 +1,1 @@
-<h1 align="center">Web3.0学习记录</h1>
+<h1 align="center">notes</h1>
