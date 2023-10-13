@@ -1,49 +1,76 @@
 # [Info]
-site_name: LearningWeb3.0 # 左上角标题
-site_url: https://github.com/sonichen/LearningWeb3.0
+site_name: notes # 左上角标题
+site_url: https://github.com/sonichen/notes
 site_author: Soni
 site_description: Learning Web3.0
 
 # [Navigtion]
 nav:
   - Home: index.html
-  - 基础知识:
+  - Web3.0:
       - 概念:
-        - 基础知识/概念/以太坊原理书.md
+        - 区块链/概念/以太坊原理书.md
         - 精通以太坊:
-          - 基础知识/概念/精通以太坊/1.什么是以太坊.md
+          - 区块链/概念/精通以太坊/1.什么是以太坊.md
       - Solidity:
-        - 基础知识/Solidity/0.Solidity.md
-        - 基础知识/Solidity/1.FirstContract.md
-        - 基础知识/Solidity/2.Varibale.md
-        - 基础知识/Solidity/3.VariableType.md
-        - 基础知识/Solidity/4.Constants.md
-        - 基础知识/Solidity/5.Immutable.md
-        - 基础知识/Solidity/6.EtherANDWei.md
-        - 基础知识/Solidity/7.Gas.md
-        - 基础知识/Solidity/8.IfElse.md
-        - 基础知识/Solidity/9.Loop.md
-        - 基础知识/Solidity/10.Mapping.md
-        - 基础知识/Solidity/11.Array.md
-        - 基础知识/Solidity/12.Enum.md
-        - 基础知识/Solidity/13.struct.md
-        - 基础知识/Solidity/14.DataLocations.md
-        - 基础知识/Solidity/15.Function.md
-        - 基础知识/Solidity/16.FunctionModifier.md
-        - 基础知识/Solidity/17.Events.md
-        - 基础知识/Solidity/18.Constructor.md
-        - 基础知识/Solidity/19.Inheritance.md
-        - 基础知识/Solidity/20.Visibility.md
-        - 基础知识/Solidity/21.Interface.md
-        - 基础知识/Solidity/22.Error.md
-        - 基础知识/Solidity/23.DeployAnyContract.md
-        - 基础知识/Solidity/24.this.md
-        - 基础知识/Solidity/25.接收ETH.md
-        - 基础知识/Solidity/26.SendETH.md
-  - Project:
-      - Project/Rust实现区块链/Rust实现区块链.md
-  - 阅读:
+        - 区块链/Solidity/0.Solidity.md
+        - 区块链/Solidity/1.FirstContract.md
+        - 区块链/Solidity/2.Varibale.md
+        - 区块链/Solidity/3.VariableType.md
+        - 区块链/Solidity/4.Constants.md
+        - 区块链/Solidity/5.Immutable.md
+        - 区块链/Solidity/6.EtherANDWei.md
+        - 区块链/Solidity/7.Gas.md
+        - 区块链/Solidity/8.IfElse.md
+        - 区块链/Solidity/9.Loop.md
+        - 区块链/Solidity/10.Mapping.md
+        - 区块链/Solidity/11.Array.md
+        - 区块链/Solidity/12.Enum.md
+        - 区块链/Solidity/13.struct.md
+        - 区块链/Solidity/14.DataLocations.md
+        - 区块链/Solidity/15.Function.md
+        - 区块链/Solidity/16.FunctionModifier.md
+        - 区块链/Solidity/17.Events.md
+        - 区块链/Solidity/18.Constructor.md
+        - 区块链/Solidity/19.Inheritance.md
+        - 区块链/Solidity/20.Visibility.md
+        - 区块链/Solidity/21.Interface.md
+        - 区块链/Solidity/22.Error.md
+        - 区块链/Solidity/23.DeployAnyContract.md
+        - 区块链/Solidity/24.this.md
+        - 区块链/Solidity/25.接收ETH.md
+        - 区块链/Solidity/26.SendETH.md
+  - Tools:
+      - Docker:
+        - 工具/docker/Docker入门.md
+      - Nginx:
+        - 工具/nginx/nginx入门.md
+      - git:
+        - 工具/git/git简单操作.md
+        - 工具/git/还原原仓库内容到修改的fork仓库.md
+      - Version Control:
+        - 工具/版本控制/DVC.md
+        - 工具/版本控制/QuiltData.md
+      - 敏感信息扫描:
+        - 工具/敏感信息搜索/sensleak.md
+        - 工具/敏感信息搜索/gitleaks.md
+      - 博客搭建:
+        - 工具/博客搭建/VuePress.md
+        - 工具/博客搭建/WordPress.md
+  - Frontend:
+      - Vue:
+        - 前端/Vue/Vue后台管理系统.md
+      - React:
+        - 前端/React/React入门.md
+  - Backend:
+      - Java:
+        - 后端/Java/Java环境服务器配置.md
+        - 后端/Java/面试八股文(2022).md
+      - Rust:
+        - 后端/Rust/Rust.md
+  - Reading:
       - 阅读/从架构维度看Web2.0与Web3.0应用之别.md
+
 # [UI]
 ## [top]
 theme:
@@ -75,16 +102,16 @@ theme:
     repo: fontawesome/brands/github
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url:  https://github.com/sonichen/LearningWeb3.0 
-repo_name:  LearningWeb3.0 
+repo_url:  https://github.com/sonichen/notes 
+repo_name:  notes 
 ## [bottom-left corner]
 copyright: sonichen # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
     - icon: fontawesome/brands/github
-      link: https://github.com/sonichen/LearningWeb3.0
-      name: GitHub | LearningWeb3.0
+      link: https://github.com/sonichen/notes
+      name: GitHub | notes
 
 # [Extensions]
 plugins:
