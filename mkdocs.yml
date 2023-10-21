@@ -61,17 +61,20 @@ nav:
         - 工具/git/git简单操作.md
         - 工具/git/还原原仓库内容到修改的fork仓库.md
       - Version Control:
+        - 工具/版本控制/MDA.md
         - 工具/版本控制/DVC.md
         - 工具/版本控制/QuiltData.md
       - 敏感信息扫描:
         - 工具/敏感信息搜索/sensleak.md
         - 工具/敏感信息搜索/gitleaks.md
       - 博客搭建:
+        - 工具/博客搭建/mkdocs.md
         - 工具/博客搭建/VuePress.md
         - 工具/博客搭建/WordPress.md
   - Frontend:
       - Vue:
-        - 前端/Vue/Vue后台管理系统.md
+        - 前端/Vue/Vue2后台管理系统.md
+        - 前端/Vue/Vue3安装.md
         - 前端/Vue/vscode生成vue3模板.md
       - React:
         - 前端/React/React入门.md

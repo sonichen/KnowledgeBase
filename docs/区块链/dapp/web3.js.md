@@ -553,7 +553,7 @@ genMnemonic();//调用
 
 载入ethereumjs-wallet包（hdkey），先通过BIP39的mnemonicToSeed把助记词生成一个seed，根据seed获取钱包的对象（hdkey），根据分层钱包，生成keypair，然后获取密钥
 
-#### 导出账户
+### 导出账户
 
 之前生成的
 
@@ -585,7 +585,7 @@ genMnemonic();//调用
 {"version":3,"id":"4ce30200-53ba-4599-82a9-5c8394f1aa5e","address":"1907d3bfdfcd47fb69079d8a628fe18ad1c35aba","crypto":{"ciphertext":"7b15846f20dc45b7c770aba7187bdbde60b6646fc86c0fe240e30adad5123528","cipherparams":{"iv":"818bbbeffdf68f5a9cba25eb49433298"},"cipher":"aes-128-ctr","kdf":"scrypt","kdfparams":{"dklen":32,"salt":"e287acd0901755e73cc8acc9a894d1fc39f71cbf4a8347a96c0e0df475114cbe","n":262144,"r":8,"p":1},"mac":"d8240b3c7f07b4025777e253665d964368bcc423cc679089a8a1be8e043d1b8b"}}
 ```
 
-#### 通过keystore生成私钥
+### 通过keystore生成私钥
 
 ```
     // 通过keyStore获取私钥
@@ -598,7 +598,7 @@ genMnemonic();//调用
     console.log(key);
 ```
 
-#### 导入账户
+### 导入账户
 
 ```
     // 通过私钥获取地址
@@ -607,7 +607,7 @@ genMnemonic();//调用
     const lowerCaseAddress2=wallet.getAddressString();
 ```
 
-总结
+### 总结
 
 ```vue
 
@@ -692,3 +692,197 @@ genMnemonic();//调用
 ## 区块链钱包项目流程
 
 ![image-20231019110739637](assets\image-20231019110739637.png)
+
+
+
+### 项目准备
+
+创建项目
+
+```
+vue create web3-wallet-app
+```
+
+**web3相关第三方包**
+
+```shell
+npm install web3 bip39 ethereumjs-tx@1.3.7 ethereumjs-util ethereumjs-wallet
+```
+
+> ethereumjs-tx使用1.3.7版本
+
+**node-polyfill兼容文件配置**
+
+1.下载polyfill插件
+
+```
+npm install node-polyfill-webpack-plugin -D
+```
+
+在vue.config.js中配置
+
+```js
+const { defineConfig } = require('@vue/cli-service')
+//引入插件
+const NodePolyfillWebpackPlugin=require("node-polyfill-webpack-plugin")
+
+module.exports = defineConfig({
+  transpileDependencies: true,
+  // 插件配置
+  configureWebpack: {
+    plugins: [
+      new NodePolyfillWebpackPlugin()
+    ],
+  },
+})
+
+```
+
+**[vant-ui UI组件库](https://vant-contrib.gitee.io/vant/#/zh-CN)**
+
+```
+npm i vant
+npm i unplugin-vue-components -D
+```
+
+在vue.config.js中配置插件
+
+```js
+const { defineConfig } = require('@vue/cli-service')
+//引入插件
+const NodePolyfillWebpackPlugin=require("node-polyfill-webpack-plugin")
+// vant
+const {VantResolver}=require("unplugin-vue-components/resolvers")
+const ComponentsPlugin=require("unplugin-vue-components/webpack")
+
+module.exports = defineConfig({
+  transpileDependencies: true,
+  // 插件配置
+  configureWebpack: {
+    plugins: [
+      new NodePolyfillWebpackPlugin(),
+      ComponentsPlugin({resolvers: [VantResolver()]}),
+    ],
+  },
+})
+
+```
+
+App.vue
+
+```
+
+<template>
+  <div>hello</div>
+</template>
+
+<script setup>
+import { ref } from "vue"
+
+</script>
+
+<style lang="less"></style>
+
+```
+
+### 页面构造
+
+思考：用小狐狸的时候，先是提示输入密码，再助记词
+
+![image-20231019131458971](assets\image-20231019131458971.png)
+
+components/Button.vue
+
+```vue
+
+<template>
+    <!-- 间距 -->
+    <van-space>
+        <van-button type="primary" @click="createWallet">创建钱包</van-button>
+        <van-button type="success">导入钱包</van-button>
+    </van-space>
+    <!-- 弹窗 -->
+    <van-dialog v-model:show="show" title="请输入密码" show-cancel-button>
+        <van-cell-group>
+            <van-field v-model="password" type="password" name="密码" label="密码" placeholder="密码" />
+
+        </van-cell-group>
+
+
+    </van-dialog>
+</template>
+  
+<script setup>
+/**
+ * 引入
+ */
+import { ref } from "vue"
+import { showDialog } from 'vant';
+import "vant/es/dialog/style"
+
+/**
+ * 界面变量控制
+ */
+const show = ref(false);// 弹窗显示
+const password = "";
+/**
+ * 函数
+ */
+const createWallet = () => {
+    show.value = true;
+};
+
+</script>
+  
+<style lang="less"></style>
+  
+```
+
+App.vue
+
+```vue
+
+<template>
+ <ButtonVue></ButtonVue>
+</template>
+
+<script setup>
+import { ref } from "vue"
+import ButtonVue from "./components/Button.vue"
+
+
+ 
+</script>
+
+<style lang="less">
+body {
+  padding:10px
+}
+</style>
+
+```
+
+
+
+### 本地存储
+
+为了方便，模拟存储在本地
+
+#### store2本地存储工具
+
+```
+npm i store2
+```
+
+```
+import store2 from "store2"
+store2("walletInfo",walletInfo);
+```
+
+![image-20231019140448077](assets\image-20231019140448077.png)
+
+
+
+
+
+![image-20231019140913901](assets\image-20231019140913901.png)
