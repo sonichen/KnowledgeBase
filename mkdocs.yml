@@ -1,6 +1,6 @@
 # [Info]
 site_name: notes # 左上角标题
-site_url: https://github.com/sonichen/notes
+# site_url: https://github.com/sonichen/notes
 site_author: Soni
 site_description: notes
 
@@ -50,9 +50,15 @@ nav:
         - 区块链/Solidity/25.接收ETH.md
         - 区块链/Solidity/26.SendETH.md
       - DApp:
+        - 区块链/dapp/备注.md
         - 区块链/dapp/钱包.md
-        - 区块链/dapp/web3.js.md
+        - 区块链/dapp/web3.js入门.md
+        - 区块链/dapp/账户系统.md
+        - 区块链/dapp/钱包项目.md
         - 区块链/dapp/代币.md
+        - 区块链/dapp/web3.js调用智能合约.md
+        - 区块链/dapp/web3.js和ether.js介绍.md
+        
   - Tools:
       - Docker:
         - 工具/docker/Docker入门.md
@@ -119,16 +125,16 @@ theme:
     repo: fontawesome/brands/github
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url:  https://github.com/sonichen/notes 
+# repo_url:  https://github.com/sonichen/notes 
 repo_name:  notes 
 ## [bottom-left corner]
 copyright: sonichen # 左下角的版权声明
 ## [bottom-right corner]
-extra:
-  social: # icons
-    - icon: fontawesome/brands/github
-      link: https://github.com/sonichen/notes
-      name: GitHub | notes
+# extra:
+#   social: # icons
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/sonichen/notes
+#       name: GitHub | notes
 
 # [Extensions]
 plugins:
