@@ -58,6 +58,8 @@ nav:
         - 区块链/dapp/代币.md
         - 区块链/dapp/web3.js调用智能合约.md
         - 区块链/dapp/web3.js和ether.js介绍.md
+        - 区块链/dapp/投票系统.md
+
         
   - Tools:
       - Docker:
@@ -91,6 +93,7 @@ nav:
         - 后端/Java/面试八股文(2022).md
       - Rust:
         - 后端/Rust/Rust.md
+        - 后端/Rust/发布到crates.io.md
   - Reading:
       - 阅读/从架构维度看Web2.0与Web3.0应用之别.md
 
