@@ -4,7 +4,7 @@
 
 ### SECTION 1.1
 
-R1. What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?
+**R1. What is the difference between a host and an end system? List several different types of end systems. Is a Web server an end system?**
 
 > There is no difference between a host and end system.
 >
@@ -16,13 +16,15 @@ R1. What is the difference between a host and an end system? List several differ
 
 R2. The word *protocol* is often used to describe diplomatic relations. How does Wikipedia describe diplomatic protocol?
 
-> From Wikipedia: Diplomatic protocol is commonly described as a set of international courtesy rules. These well-established and time-honored rules have made it easier for nations and people to live and work together. Part of protocol has always been the acknowledgment of the hierarchical standing of all present. Protocol rules are based on the principles of civility. 
+> From Wikipedia: Diplomatic protocol is commonly described as **a set of international courtesy rules**. These well-established and time-honored rules have **made it easier for nations and people to live and work together**. Part of protocol has always been the acknowledgment of the hierarchical standing of all present. Protocol rules are based on the principles of civility. 
 
 
 
 R3. Why are standards important for protocols?
 
 > It provide a framework that allows different software to interact with each other.
+>
+> It control sending, receiving of msg, it support the Internet to work.
 
 
 
@@ -74,11 +76,13 @@ R8. What are some of the physical media that Ethernet can run over?
 
 
 
-R9. HFC, DSL, and FTTH are all used for residential access. For each of these access technologies, provide a range of transmission rates and comment on whether the transmission rate is shared or dedicated.
+**R9. HFC, DSL, and FTTH are all used for residential access. For each of these access technologies, provide a range of transmission rates and comment on whether the transmission rate is shared or dedicated.**
 
 > Dial up modems: up to 56 Kbps, bandwidth is dedicated; 
 >
-> ADSL: up to 24 Mbps downstream and 2.5 Mbps upstream, bandwidth is dedicated; HFC, rates up to 42.8 
+> DSL: up to 24 Mbps downstream and 2.5 Mbps upstream, bandwidth is dedicated; 
+>
+> HFC, rates up to 42.8 
 >
 > Mbps and upstream rates of up to 30.7 Mbps, bandwidth is shared. 
 >
@@ -94,7 +98,7 @@ R10. Describe the most popular wireless Internet access technologies today. Comp
 >
 > wifi: In a wireless LAN, wireless users transmit/receive packets to/from an base station within a radius of few tens of meters. The base station is typically connected to the wired Internet and thus serves to connect wireless users to the wired network.
 >
-> 4G 5G wide-area wireless access network. In these systems, packets are 
+> 3G 4G wide-area wireless access network. In these systems, packets are 
 >
 > transmitted over the same wireless infrastructure used for cellular telephony, with the base station thus being managed by a telecommunications provider. This provides wireless access to users within a radius of tens of kilometers of the base station. 
 
@@ -102,13 +106,15 @@ R10. Describe the most popular wireless Internet access technologies today. Comp
 
 ### SECTION 1.3
 
-R11. Suppose there is exactly one packet switch between a sending host and a receiving host. The transmission rates between the sending host and the switch and between the switch and the receiving host are *R*1 and *R*2, respectively. Assuming that the switch uses store-and-forward packet switching, what is the total end-to-end delay to send a packet of length *L*? (Ignore queuing, propagation delay, and processing delay.)
+**R11. Suppose there is exactly one packet switch between a sending host and a receiving host. The transmission rates between the sending host and the switch and between the switch and the receiving host are *R*1 and *R*2, respectively. Assuming that the switch uses store-and-forward packet switching, what is the total end-to-end delay to send a packet of length *L*? (Ignore queuing, propagation delay, and processing delay.)**
 
 ![image-20231028163331451](assets\image-20231028163331451.png)
 
+因为交换机使用存储-转发分组交换，所以整个分组必须先完全存储在交换机的缓存中，然后才能进行转发。因此，总的端到端延迟等于传输延迟。
 
+![image-20231103194331683](assets\image-20231103194331683.png)
 
-R12. What advantage does a circuit-switched network have over a packet-switched network? What advantages does TDM have over FDM in a circuit-switched network?
+**R12. What advantage does a circuit-switched network have over a packet-switched network? What advantages does TDM have over FDM in a circuit-switched network?**
 
 > a circuit-switched network: guarantee a centain amount of end-to-end bandwith for the duration of a call. while most packet-switched network cannot make any end-to-end guarantees for bandwith.
 >
@@ -120,37 +126,36 @@ R12. What advantage does a circuit-switched network have over a packet-switched 
 
 
 
-R13. Suppose users share a 2 Mbps link. Also suppose each user transmits continuously at 1 Mbps when transmitting, but each user transmits only 20 percent of the time. (See the discussion of statistical multiplexing in Section 1.3.)
+**R13. Suppose users share a 2 Mbps link. Also suppose each user transmits continuously at 1 Mbps when transmitting, but each user transmits only 20 percent of the time. (See the discussion of statistical multiplexing in Section 1.3.)**
 
 a. When circuit switching is used, how many users can be supported?
 
-b. For the remainder of this problem, suppose packet switching is used. 
+> When circuit switching is used, each user requires a dedicated 1 Mbps link. Therefore, only two users can be supported on the 2 Mbps link.
 
-Why will there be essentially no queuing delay before the link if two or fewer users transmit at the same time? Why will there be a queuing delay if three users transmit at the same time?
+![image-20231103194509928](assets\image-20231103194509928.png)
+
+b. For the remainder of this problem, suppose packet switching is used. Why will there be essentially no queuing delay before the link if two or fewer users transmit at the same time? Why will there be a queuing delay if three users transmit at the same time?
+
+最高不超过2，没有排队情况，支持2个用户ok
+
+
 
 c. Find the probability that a given user is transmitting.
 
-d. Suppose now there are three users. Find the probability that at any given time, all three users are transmitting simultaneously. Find the fraction of time during which the queue grows.
+> Let p be the probability that a given user is transmitting. Since each user transmits only 20 percent of the time, we have p = 0.2.
+
+
+
+d. Suppose now there are **three** users. Find the probability that at any given time, all three users are transmitting simultaneously. Find the fraction of time during which the queue grows.
+
+![image-20231028191344537](assets\image-20231028191344537.png)
 
 
 
 R14. Why will two ISPs at the same level of the hierarchy often peer with each other? How does an IXP earn money?
 
-> If the two ISPs do not peer with each other, then when they send traffic to each other 
+> If the two ISPs do not peer with each other, then when they send traffic to each other they have to send the traffic through a provider ISP (intermediary), to which they have to pay for carrying the traffic. By peering with each other directly, the two ISPs can reduce their payments to their provider ISPs. An Internet Exchange Points (IXP) (typically in a standalone building with its own switches) is a meeting point where multiple ISPs can connect and/or peer together. An ISP earns its money by charging each of the the ISPs that connect to the IXP a relatively small fee, which may depend on the amount of traffic sent to or received from the IXP. 
 >
-> they have to send the traffic through a provider ISP (intermediary), to which they 
->
-> have to pay for carrying the traffic. By peering with each other directly, the two ISPs 
->
-> can reduce their payments to their provider ISPs. An Internet Exchange Points (IXP) 
->
-> (typically in a standalone building with its own switches) is a meeting point where 
->
-> multiple ISPs can connect and/or peer together. An ISP earns its money by charging 
->
-> each of the the ISPs that connect to the IXP a relatively small fee, which may depend 
->
-> on the amount of traffic sent to or received from the IXP. 
 
 
 
@@ -174,27 +179,96 @@ R16. Consider sending a packet from a source host to a destination host over a f
 
 R17. Visit the Transmission Versus Propagation Delay interactive animation at the companion Web site. Among the rates, propagation delay, and packet sizes available, find a combination for which the sender finishes transmitting before the first bit of the packet reaches the receiver. Find another combination for which the first bit of the packet reaches the receiver before the sender finishes transmitting.
 
+> a) 1000 km, 1 Mbps, 100 bytes 
+>
+>  b) 100 km, 1 Mbps, 100 bytes 
 
 
-R18. How long does it take a packet of length 1,000 bytes to propagate over a link of distance 2,500 km, propagation speed 2.5*10^8 m/s, and transmission rate 2 Mbps? More generally, how long does it take a packet of length *L* to propagate over a link of distance *d*, propagation speed *s*, and transmission rate *R* bps? Does this delay depend on packet length? Does this delay depend on transmission rate?
+
+- [ ] **R18. How long does it take a packet of length 1,000 bytes to propagate over a link of distance 2,500 km, propagation speed 2.5*10^8 m/s, and transmission rate 2 Mbps? More generally, how long does it take a packet of length *L* to propagate over a link of distance *d*, propagation speed *s*, and transmission rate *R* bps? Does this delay depend on packet length? Does this delay depend on transmission rate?**
 
 
 
-R19. Suppose Host A wants to send a large file to Host B. The path from Host A to Host B has three links, of rates *R*1 = 500 kbps, *R*2 = 2 Mbps, and *R*3 = 1 Mbps.
+
+d/s
+
+no
+
+no
+
+传播延迟只和距离和光速有关系
+
+![image-20231103194829359](assets\image-20231103194829359.png)
+
+**R19. Suppose Host A wants to send a large file to Host B. The path from Host A to Host B has three links, of rates *R*1 = 500 kbps, *R*2 = 2 Mbps, and *R*3 = 1 Mbps.**
 
 a. Assuming no other traffic in the network, what is the throughput for the file transfer?
 
+> R1=0.5Mbps
+>
+>  the throughput for the file transfer: min{R1, R2, R3}=500kbps
+
+
+
 b. Suppose the file is 4 million bytes. Dividing the file size by the through put, roughly how long will it take to transfer the file to Host B?
 
-c. Repeat (a) and (b), but now with *R*2 reduced to 100 kbps. 
+> We can calculate the time it takes to transfer the file using the formula:
+>
+> **Time = File size / Throughput**
+>
+> First, we need to convert the file size from bytes to bits:
+>
+> 4 million bytes = 4,000,000 * 8 = 32,000,000 bits
+>
+> Next, we need to find the bottleneck link, which is the link with the lowest bandwidth. In this case, it is the first link with a bandwidth of 500 kbps.
+>
+> So the time it takes to transfer the file is:
+>
+> Time = 32,000,000 bits / 500,000 bits/s + (32,000,000 bits / 2,000,000 bits/s) + (32,000,000 bits / 1,000,000 bits/s) Time = 64 seconds
+>
+> Therefore, it will take roughly 64 seconds to transfer the file from Host A to Host B.
+
+![image-20231103195017595](assets\image-20231103195017595.png)
+
+- [ ] c. Repeat (a) and (b), but now with *R*2 reduced to 100 kbps. 
+
+
+
+>  the throughput for the file transfer: min{R1, R2, R3}=100kbps
+>
+> 
+>
+> We can calculate the time it takes to transfer the file using the formula:
+>
+> **Time = File size / Throughput**
+>
+> First, we need to convert the file size from bytes to bits:
+>
+> 4 million bytes = 4,000,000 * 8 = 32,000,000 bits
+>
+> Next, we need to find the bottleneck link, which is the link with the lowest bandwidth. In this case, it is the first link with a bandwidth of 100 kbps.
+>
+> So the time it takes to transfer the file is:
+>
+> Time = 32,000,000 bits / 500,000 bits/s + (32,000,000 bits /100,000 bits/s) + (32,000,000 bits / 1,000,000 bits/s) Time = 320 seconds
+>
+> Therefore, it will take roughly 64 seconds to transfer the file from Host A to Host B.
+
+![image-20231103195039971](assets\image-20231103195039971.png)
 
 
 
 R20. Suppose end system A wants to send a large file to end system B. At a very high level, describe how end system A creates packets from the file. When one of these packets arrives to a router, what information in the packet does the router use to determine the link onto which the packet is forwarded? Why is packet switching in the Internet analogous to driving from one city to another and asking directions along the way?
 
+> End system A breaks the large file into chunks. It adds header to each chunk, thereby generating multiple packets from the file. The header in each packet includes the IP address of the destination (end system B). The packet switch uses the destination IP address in the packet to determine the outgoing link. Asking which road to take is analogous to a packet asking which outgoing link it should be forwarded on, given the packet’s destination address. 
+
 
 
 R21. Visit the Queuing and Loss interactive animation at the companion Web site. What is the maximum emission rate and the minimum transmission rate? With those rates, what is the traffic intensity? Run the interactive animation with these rates and determine how long it takes for packet loss to occur. Then repeat the experiment a second time and determine again how long it takes for packet loss to occur. Are the values different? Why or why not?
+
+> The maximum emission rate is 500 packets/sec and the maximum transmission rate is 350 packets/sec. The corresponding traffic intensity is 500/350 =1.43 > 1. Loss will eventually occur for each experiment; but the time when loss first occurs will be different from one experiment to the next due to the randomness in the emission process. 
+
+
 
 ### SECTION 1.5
 
@@ -208,7 +282,7 @@ R22. List five tasks that a layer can perform. Is it possible that one (or more)
 
 
 
-R23. What are the five layers in the Internet protocol stack? What are the principal responsibilities of each of these layers?
+**R23. What are the five layers in the Internet protocol stack? What are the principal responsibilities of each of these layers?**
 
 > from top to bottom
 >
@@ -231,7 +305,7 @@ R24. What is an application-layer message? A transport-layer segment? A network-
 
 
 
-R25. Which layers in the Internet protocol stack does a router process? Which layers does a link-layer switch process? Which layers does a host process?
+**R25. Which layers in the Internet protocol stack does a router process? Which layers does a link-layer switch process? Which layers does a host process?**
 
 > router process network, link and physis layer.
 >
@@ -283,3 +357,5 @@ R28. Suppose Alice and Bob are sending packets to each other over a computer net
 
 
 ## **Problems**
+
+![image-20231103195212345](assets\image-20231103195212345.png)

@@ -2350,136 +2350,166 @@
 <p>Different types of end system: smart phone, PCs, Web servers, mail servers, Interneted-connected game consoles.</p>
 <p>The web server is an end system.</p>
 </blockquote>
-<ul>
-<li>[ ] R2. The word <em>protocol</em> is often used to describe diplomatic relations. How does Wikipedia describe diplomatic protocol?</li>
-</ul>
+<p>R2. The word <em>protocol</em> is often used to describe diplomatic relations. How does Wikipedia describe diplomatic protocol?</p>
+<blockquote>
+<p>From Wikipedia: Diplomatic protocol is commonly described as a set of international courtesy rules. These well-established and time-honored rules have made it easier for nations and people to live and work together. Part of protocol has always been the acknowledgment of the hierarchical standing of all present. Protocol rules are based on the principles of civility. </p>
+</blockquote>
 <p>R3. Why are standards important for protocols?</p>
 <blockquote>
 <p>It provide a framework that allows different software to interact with each other.</p>
 </blockquote>
 <h3 id="section-12">SECTION 1.2<a class="headerlink" href="#section-12" title="Permanent link">&para;</a></h3>
-<ul>
-<li>[ ]  R4. List four access technologies. Classify each one as home access, enterprise access, or wide-area wireless access.</li>
-</ul>
+<p>R4. List four access technologies. Classify each one as home access, enterprise access, or wide-area wireless access.</p>
 <blockquote>
 <p>DSL over telephone line: home access</p>
 <p>Cable to HFC: home sccess</p>
 <p>Wifi: enterprise access</p>
 <p>4G and 5G: wide-area wireless</p>
 </blockquote>
-<ul>
-<li>[ ] R5. Is HFC transmission rate dedicated or shared among users? Are collisions possible in a downstream HFC channel? Why or why not?</li>
-</ul>
+<p>R5. Is HFC transmission rate dedicated or shared among users? Are collisions possible in a downstream HFC channel? Why or why not?</p>
 <blockquote>
 <p>HFC transmission is shared among the users.</p>
 <p>No, there are no collisions in the downstream channel.</p>
 <p>On the downstream, all packets emanate from a single source.</p>
 </blockquote>
 <p>R6. List the available residential access technologies in your city. For each type of access, provide the advertised downstream rate, upstream rate, and monthly price.</p>
+<blockquote>
+<p>DSL</p>
+<p>cable modem</p>
+<p>fiber-to-the-home</p>
+</blockquote>
 <p>R7. What is the transmission rate of Ethernet LANs?</p>
+<blockquote>
+<p>Ethernet LANs have transmission rates of 10 Mbps, 100 Mbps, 1 Gbps and 10 Gbps. </p>
+</blockquote>
 <p>R8. What are some of the physical media that Ethernet can run over?</p>
+<blockquote>
+<p>Ethernet most commonly runs over twisted-pair copper wire. It also run over fiber optic links.</p>
+</blockquote>
 <p>R9. HFC, DSL, and FTTH are all used for residential access. For each of these access technologies, provide a range of transmission rates and comment on whether the transmission rate is shared or dedicated.</p>
+<blockquote>
+<p>Dial up modems: up to 56 Kbps, bandwidth is dedicated; </p>
+<p>ADSL: up to 24 Mbps downstream and 2.5 Mbps upstream, bandwidth is dedicated; HFC, rates up to 42.8 </p>
+<p>Mbps and upstream rates of up to 30.7 Mbps, bandwidth is shared. </p>
+<p>FTTH: 2-10Mbps upload; 10-20 Mbps download; bandwidth is not shared.</p>
+</blockquote>
 <p>R10. Describe the most popular wireless Internet access technologies today. Compare and contrast them.</p>
+<blockquote>
+<p>two popular </p>
+<p>wifi: In a wireless LAN, wireless users transmit/receive packets to/from an base station within a radius of few tens of meters. The base station is typically connected to the wired Internet and thus serves to connect wireless users to the wired network.</p>
+<p>4G 5G wide-area wireless access network. In these systems, packets are </p>
+<p>transmitted over the same wireless infrastructure used for cellular telephony, with the base station thus being managed by a telecommunications provider. This provides wireless access to users within a radius of tens of kilometers of the base station. </p>
+</blockquote>
 <h3 id="section-13">SECTION 1.3<a class="headerlink" href="#section-13" title="Permanent link">&para;</a></h3>
 <p>R11. Suppose there is exactly one packet switch between a sending host and a receiving host. The transmission rates between the sending host and the switch and between the switch and the receiving host are <em>R</em>1 and <em>R</em>2, respectively. Assuming that the switch uses store-and-forward packet switching, what is the total end-to-end delay to send a packet of length <em>L</em>? (Ignore queuing, propagation delay, and processing delay.)</p>
+<p><img alt="image-20231028163331451" src="../assets/image-20231028163331451.png" /></p>
 <p>R12. What advantage does a circuit-switched network have over a packet-switched network? What advantages does TDM have over FDM in a circuit-switched network?</p>
+<blockquote>
+<p>a circuit-switched network: guarantee a centain amount of end-to-end bandwith for the duration of a call. while most packet-switched network cannot make any end-to-end guarantees for bandwith.</p>
+<p>TDM is advantageous over FDM in a circuit-switched network due to its efficient use of bandwidth, simple implementation, lower crosstalk, ease of upgrade, and better suitability for digital signals.</p>
+<p>FDM requires sophisticated analog hardware to shift signal into appropriate frequency bands.</p>
+</blockquote>
 <p>R13. Suppose users share a 2 Mbps link. Also suppose each user transmits continuously at 1 Mbps when transmitting, but each user transmits only 20 percent of the time. (See the discussion of statistical multiplexing in Section 1.3.)</p>
 <p>a. When circuit switching is used, how many users can be supported?</p>
 <p>b. For the remainder of this problem, suppose packet switching is used. </p>
 <p>Why will there be essentially no queuing delay before the link if two or fewer users transmit at the same time? Why will there be a queuing delay if three users transmit at the same time?</p>
 <p>c. Find the probability that a given user is transmitting.</p>
 <p>d. Suppose now there are three users. Find the probability that at any given time, all three users are transmitting simultaneously. Find the fraction of time during which the queue grows.</p>
-<p>R14. </p>
-<p>Why will two ISPs at the same level of the hierarchy often peer with each other? How does an IXP earn money?</p>
+<p>R14. Why will two ISPs at the same level of the hierarchy often peer with each other? How does an IXP earn money?</p>
+<blockquote>
+<p>If the two ISPs do not peer with each other, then when they send traffic to each other </p>
+<p>they have to send the traffic through a provider ISP (intermediary), to which they </p>
+<p>have to pay for carrying the traffic. By peering with each other directly, the two ISPs </p>
+<p>can reduce their payments to their provider ISPs. An Internet Exchange Points (IXP) </p>
+<p>(typically in a standalone building with its own switches) is a meeting point where </p>
+<p>multiple ISPs can connect and/or peer together. An ISP earns its money by charging </p>
+<p>each of the the ISPs that connect to the IXP a relatively small fee, which may depend </p>
+<p>on the amount of traffic sent to or received from the IXP. </p>
+</blockquote>
 <p>R15. Some content providers have created their own networks. Describe Google’s network. What motivates content providers to create these networks?</p>
+<blockquote>
+<p>Google Global Network is a private fiber optic network connecting Google's data centers globally, providing fast and reliable service. Content providers create their own networks <strong>for control, optimization, and reliability, save money</strong></p>
+<p>Google has created its own network, known as Google Global Network, which is a private fiber optic network that spans across the globe, connecting its data centers and providing high-speed internet access to its users. Content providers like Google create these networks to ensure reliable and fast delivery of their services, reduce reliance on third-party networks, and have more control over their network infrastructure. This also allows them to optimize their network for their specific needs, such as reducing latency and improving security</p>
+</blockquote>
 <h3 id="section-14">SECTION 1.4<a class="headerlink" href="#section-14" title="Permanent link">&para;</a></h3>
 <p>R16. Consider sending a packet from a source host to a destination host over a fixed route. List the delay components in the end-to-end delay. Which of these delays are constant and which are variable?</p>
+<blockquote>
+<p>processing delays, transmission delays, propagation delays, and queuing delays. </p>
+<p>All of these delays are fixed, except for the queuing delays, which are variable. </p>
+</blockquote>
 <p>R17. Visit the Transmission Versus Propagation Delay interactive animation at the companion Web site. Among the rates, propagation delay, and packet sizes available, find a combination for which the sender finishes transmitting before the first bit of the packet reaches the receiver. Find another combination for which the first bit of the packet reaches the receiver before the sender finishes transmitting.</p>
-<p>R18. </p>
-<p>How long does it take a packet of length 1,000 bytes to propagate over a link of distance 2,500 km, propagation speed </p>
-<p>2.5# 108 m/s, and transmission rate 2 Mbps? More generally, how long does it take a packet of length <em>L</em> to </p>
-<p>propagate over a link of distance <em>d</em>, propagation speed <em>s</em>, and transmission rate <em>R</em> bps? Does this delay depend on packet length? Does this delay depend on transmission rate?</p>
+<p>R18. How long does it take a packet of length 1,000 bytes to propagate over a link of distance 2,500 km, propagation speed 2.5<em>10^8 m/s, and transmission rate 2 Mbps? More generally, how long does it take a packet of length </em>L<em> to propagate over a link of distance </em>d<em>, propagation speed </em>s<em>, and transmission rate </em>R* bps? Does this delay depend on packet length? Does this delay depend on transmission rate?</p>
 <p>R19. Suppose Host A wants to send a large file to Host B. The path from Host A to Host B has three links, of rates <em>R</em>1 = 500 kbps, <em>R</em>2 = 2 Mbps, and <em>R</em>3 = 1 Mbps.</p>
-<p>a. Assuming no other traffic in the network, what is the throughput for the </p>
-<p>file transfer?</p>
-<p>b. Suppose the file is 4 million bytes. Dividing the file size by the through</p>
-<p>put, roughly how long will it take to transfer the file to Host B?</p>
-<p>c. Repeat (a) and (b), but now with <em>R</em>2 reduced to 100 kbps.</p>
-<p>R20. Suppose end system A wants to send a large file to end system B. At a very </p>
-<p>high level, describe how end system A creates packets from the file. When </p>
-<p>one of these packets arrives to a router, what information in the packet does </p>
-<p>the router use to determine the link onto which the packet is forwarded? </p>
-<p>Why is packet switching in the Internet analogous to driving from one city to </p>
-<p>another and asking directions along the way?</p>
-<p>R21. Visit the Queuing and Loss interactive animation at the companion Web site. </p>
-<p>What is the maximum emission rate and the minimum transmission rate? </p>
-<p>With those rates, what is the traffic intensity? Run the interactive animation </p>
-<p>with these rates and determine how long it takes for packet loss to occur. </p>
-<p>Then repeat the experiment a second time and determine again how long it </p>
-<p>takes for packet loss to occur. Are the values different? Why or why not?</p>
+<p>a. Assuming no other traffic in the network, what is the throughput for the file transfer?</p>
+<p>b. Suppose the file is 4 million bytes. Dividing the file size by the through put, roughly how long will it take to transfer the file to Host B?</p>
+<p>c. Repeat (a) and (b), but now with <em>R</em>2 reduced to 100 kbps. </p>
+<p>R20. Suppose end system A wants to send a large file to end system B. At a very high level, describe how end system A creates packets from the file. When one of these packets arrives to a router, what information in the packet does the router use to determine the link onto which the packet is forwarded? Why is packet switching in the Internet analogous to driving from one city to another and asking directions along the way?</p>
+<p>R21. Visit the Queuing and Loss interactive animation at the companion Web site. What is the maximum emission rate and the minimum transmission rate? With those rates, what is the traffic intensity? Run the interactive animation with these rates and determine how long it takes for packet loss to occur. Then repeat the experiment a second time and determine again how long it takes for packet loss to occur. Are the values different? Why or why not?</p>
 <h3 id="section-15">SECTION 1.5<a class="headerlink" href="#section-15" title="Permanent link">&para;</a></h3>
 <p>R22. List five tasks that a layer can perform. Is it possible that one (or more) of these tasks could be performed by two (or more) layers?</p>
-<p>It is possible. </p>
-<p>R23. </p>
-<p>What are the five layers in the Internet protocol stack? What are the principal </p>
-<p>responsibilities of each of these layers?</p>
-<p>R24. </p>
-<p>What is an application-layer message? A transport-layer segment? A network-layer datagram? A link-layer frame?</p>
-<p>R25. </p>
-<p>Which layers in the Internet protocol stack does a router process? Which layers does a link-layer switch process? Which layers does a host process?</p>
+<blockquote>
+<p>5 tasks: error control, flow control, segmentation and reassembly, multiplexing, connect setup.</p>
+<p>Yes. They can be duplicated at different layers.</p>
+<p>eg, error control is ofter provided at more than one layer.</p>
+</blockquote>
+<p>R23. What are the five layers in the Internet protocol stack? What are the principal responsibilities of each of these layers?</p>
+<blockquote>
+<p>from top to bottom</p>
+<ul>
+<li>application layer: support network applications. eg, FTP, SMTP, HTTP</li>
+<li>transport layer: process-process data transfer. eg. TCP, UDP</li>
+<li>network layer: routing of datagrams from source to destination. eg IP</li>
+<li>link layer: data transfer from neighboring network elements. eg,PPP</li>
+<li>physical layer: bits on the wire.</li>
+</ul>
+</blockquote>
+<p>R24. What is an application-layer message? A transport-layer segment? A network-layer datagram? A link-layer frame?</p>
+<blockquote>
+<ul>
+<li>application layer, message: data which application wants to send and pass on to transport layer</li>
+<li>transport layer, segment: genereated by the transport layer and encapsulates application-layer message with transport layer header.</li>
+<li>network layer, datagram: encapsulate transport-layer segment with a network-layer header  </li>
+<li>link layer, frame: encapsulate network layer datagram with a link-layer header.</li>
+</ul>
+</blockquote>
+<p>R25. Which layers in the Internet protocol stack does a router process? Which layers does a link-layer switch process? Which layers does a host process?</p>
+<blockquote>
+<p>router process network, link and physis layer.</p>
+<p>link-layer switch process link layer and physis layer</p>
+<p>host process all five layers.</p>
+</blockquote>
 <h3 id="section-16">SECTION 1.6<a class="headerlink" href="#section-16" title="Permanent link">&para;</a></h3>
 <ul>
-<li>[ ] R26. </li>
+<li>[ ] R26. What is self-replicating malware?</li>
 </ul>
-<p>What is self-replicating malware?</p>
-<ul>
-<li>[ ] R27. </li>
-</ul>
-<p>Describe how a botnet can be created and how it can be used for a DDoS attack.</p>
-<ul>
-<li>[ ] R28. </li>
-</ul>
-<p>Suppose Alice and Bob are sending packets to each other over a computer network. Suppose Trudy positions herself in the network so that she can capture all the packets sent by Alice and send whatever she wants to Bob; she can also capture all the packets sent by Bob and send whatever she wants to Alice. List some of the malicious things Trudy can do from this position.</p>
+<blockquote>
+<p><strong>Self-replicating malware</strong> is a type of malicious software that can spread itself to other computers or files without the user’s knowledge or consent. </p>
+<p>It is a virus. Require some form of human interaction to spread. eg. email viruses.</p>
+</blockquote>
+<p>R27. Describe how a botnet can be created and how it can be used for a DDoS attack.</p>
+<blockquote>
+<p>Creation of a botnet requires an attacker to find vulnerability in some application or system (e.g. exploiting the buffer overflow vulnerability that might exist in an application). After finding the vulnerability, the attacker needs to scan for hosts that are vulnerable. The target is basically to compromise a series of systems by exploiting that particular vulnerability. Any system that is part of the botnet can automatically scan its environment and propagate by exploiting the vulnerability. An important property of such botnets is that the originator of the botnet can remotely </p>
+<p>control and issue commands to all the nodes in the botnet. Hence, it becomes possible for the attacker to issue a command to all the nodes, that target a single node (for example, all nodes in the botnet might be commanded by the attacker to send a TCP SYN message to the target, which might result in a TCP SYN flood attack at the target). </p>
+<p>创建僵尸网络需要攻击者找到某些应用程序中的漏洞或
+系统（例如，利用可能存在于系统中的缓冲区溢出漏洞）
+应用）。发现漏洞后，攻击者需要扫描以下主机：
+是脆弱的。目标基本上是通过以下方式危害一系列系统
+利用该特定漏洞。属于僵尸网络一部分的任何系统都可以
+自动扫描其环境并利用该漏洞进行传播。一个
+此类僵尸网络的一个重要特性是僵尸网络的发起者可以远程
+控制并向僵尸网络中的所有节点发出命令。因此，它变成
+攻击者可以向所有节点发出命令，以单个节点为目标
+节点（例如，攻击者可能命令僵尸网络中的所有节点
+向目标发送 TCP SYN 消息，这可能会导致 TCP SYN 洪水
+攻击目标）。</p>
+</blockquote>
+<p>R28. Suppose Alice and Bob are sending packets to each other over a computer network. Suppose Trudy positions herself in the network so that she can capture all the packets sent by Alice and send whatever she wants to Bob; she can also capture all the packets sent by Bob and send whatever she wants to Alice. List some of the malicious things Trudy can do from this position.</p>
+<blockquote>
+<p>Trudy can <strong>pretend to be Bob to Alice (and vice-versa) and partially or completely modify the message(s)</strong> being sent from Bob to Alice. </p>
+<p>For example, she can easily change the phrase “Alice, I owe you $1000” to “Alice, I owe you $10,000”. </p>
+<p>Furthermore, Trudy can even <strong>drop the packets that are being sent by Bob to Alice</strong> (and vise-versa), even if the packets from Bob to Alice are encrypted</p>
+</blockquote>
 <h2 id="problems"><strong>Problems</strong><a class="headerlink" href="#problems" title="Permanent link">&para;</a></h2>
-<p>P1. Design and describe an application-level protocol to be used between an </p>
-<p>automatic teller machine and a bank’s centralized computer. Your protocol </p>
-<p>should allow a user’s card and password to be verified, the account bal</p>
-<p>ance (which is maintained at the centralized computer) to be queried, and an </p>
-<p>account withdrawal to be made (that is, money disbursed to the user). Your </p>
-<p>protocol entities should be able to handle the all-too-common case in which </p>
-<p>there is not enough money in the account to cover the withdrawal. Specify </p>
-<p>your protocol by listing the messages exchanged and the action taken by the </p>
-<p>automatic teller machine or the bank’s centralized computer on transmission </p>
-<p>and receipt of messages. Sketch the operation of your protocol for the case of </p>
-<p>a simple withdrawal with no errors, using a diagram similar to that in Figure 1.2. </p>
-<p>Explicitly state the assumptions made by your protocol about the underlying </p>
-<p>end-to-end transport service.</p>
-<p>P2. Equation 1.1 gives a formula for the end-to-end delay of sending one packet </p>
-<p>of length <em>L</em> over <em>N</em> links of transmission rate <em>R</em>. Generalize this formula for </p>
-<p>sending <em>P</em> such packets back-to-back over the <em>N</em> links.</p>
-<p>P3. Consider an application that transmits data at a steady rate (for example, the </p>
-<p>sender generates an <em>N</em>-bit unit of data every <em>k</em> time units, where <em>k</em> is small </p>
-<p>and fixed). Also, when such an application starts, it will continue running </p>
-<p>for a relatively long period of time. Answer the following questions, briefly </p>
-<p>justifying your answer:</p>
-<p>a. Would a packet-switched network or a circuit-switched network be more </p>
-<p>appropriate for this application? Why?</p>
-<p>b. Suppose that a packet-switched network is used and the only traffic in</p>
-<p>this network comes from such applications as described above. Further</p>
-<p>more, assume that the sum of the application data rates is less than the </p>
-<p>capacities of each and every link. Is some form of congestion control </p>
-<p>needed? Why?</p>
-<p>P4. Consider the circuit-switched network in Figure 1.13. Recall that there are </p>
-<p>four circuits on each link. Label the four switches A, B, C, and D, going in </p>
-<p>the clockwise direction.</p>
-<p>a. What is the maximum number of simultaneous connections that can be in </p>
-<p>progress at any one time in this network?</p>
-<p>b. Suppose that all connections are between switches A and C. What is the </p>
-<p>maximum number of simultaneous connections that can be in progress?</p>
-<p>c. Suppose we want to make four connections between switches A and C,</p>
-<p>and another four connections between switches B and D. Can we </p>
-<p>route these calls through the four links to accommodate all eight </p>
-<p>connections?</p>
 
 
 
