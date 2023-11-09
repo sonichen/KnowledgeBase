@@ -14,68 +14,6 @@
 
 
 
-R2. The word *protocol* is often used to describe diplomatic relations. How does Wikipedia describe diplomatic protocol?
-
-> From Wikipedia: Diplomatic protocol is commonly described as **a set of international courtesy rules**. These well-established and time-honored rules have **made it easier for nations and people to live and work together**. Part of protocol has always been the acknowledgment of the hierarchical standing of all present. Protocol rules are based on the principles of civility. 
-
-
-
-R3. Why are standards important for protocols?
-
-> It provide a framework that allows different software to interact with each other.
->
-> It control sending, receiving of msg, it support the Internet to work.
-
-
-
-
-
-### SECTION 1.2
-
-R4. List four access technologies. Classify each one as home access, enterprise access, or wide-area wireless access.
-
-> DSL over telephone line: home access
->
-> Cable to HFC: home sccess
->
-> Wifi: enterprise access
->
-> 4G and 5G: wide-area wireless
-
-
-
-R5. Is HFC transmission rate dedicated or shared among users? Are collisions possible in a downstream HFC channel? Why or why not?
-
->  HFC transmission is shared among the users.
->
-> No, there are no collisions in the downstream channel.
->
-> On the downstream, all packets emanate from a single source.
-
-
-
-R6. List the available residential access technologies in your city. For each type of access, provide the advertised downstream rate, upstream rate, and monthly price.
-
-> DSL
->
-> cable modem
->
-> fiber-to-the-home
-
-
-
-R7. What is the transmission rate of Ethernet LANs?
-
-> Ethernet LANs have transmission rates of 10 Mbps, 100 Mbps, 1 Gbps and 10 Gbps. 
-
-
-
-R8. What are some of the physical media that Ethernet can run over?
-
-> Ethernet most commonly runs over twisted-pair copper wire. It also run over fiber optic links.
-
-
-
 **R9. HFC, DSL, and FTTH are all used for residential access. For each of these access technologies, provide a range of transmission rates and comment on whether the transmission rate is shared or dedicated.**
 
 > Dial up modems: up to 56 Kbps, bandwidth is dedicated; 
@@ -87,20 +25,6 @@ R8. What are some of the physical media that Ethernet can run over?
 > Mbps and upstream rates of up to 30.7 Mbps, bandwidth is shared. 
 >
 > FTTH: 2-10Mbps upload; 10-20 Mbps download; bandwidth is not shared.
-
-
-
-
-
-R10. Describe the most popular wireless Internet access technologies today. Compare and contrast them.
-
-> two popular 
->
-> wifi: In a wireless LAN, wireless users transmit/receive packets to/from an base station within a radius of few tens of meters. The base station is typically connected to the wired Internet and thus serves to connect wireless users to the wired network.
->
-> 3G 4G wide-area wireless access network. In these systems, packets are 
->
-> transmitted over the same wireless infrastructure used for cellular telephony, with the base station thus being managed by a telecommunications provider. This provides wireless access to users within a radius of tens of kilometers of the base station. 
 
 
 
