@@ -28,12 +28,38 @@ nav:
         - 工具/博客搭建/VuePress.md
         - 工具/博客搭建/WordPress.md
   - Frontend:
+      - JavaScript:
+        - 前端/JavaScript/0.note.md
+        - 前端/JavaScript/01.JavaScript介绍.md
+        - 前端/JavaScript/02.HelloWorld.md
+        - 前端/JavaScript/03.基本语法.md
+        - 前端/JavaScript/04.严格检查模式.md
+        - 前端/JavaScript/05.数据类型.md
+        - 前端/JavaScript/06.流程控制.md
+        - 前端/JavaScript/07.函数.md
+        - 前端/JavaScript/08.内部对象.md
+        - 前端/JavaScript/09.面对对象编程.md
+        - 前端/JavaScript/10.操作BOM对象.md
+        - 前端/JavaScript/11.操作DOM对象.md
+        - 前端/JavaScript/12.表单.md
+        - 前端/JavaScript/13.jQuery.md
       - Vue:
         - 前端/Vue/Vue2后台管理系统.md
         - 前端/Vue/Vue3安装.md
         - 前端/Vue/vscode生成vue3模板.md
       - React:
-        - 前端/React/React入门.md
+        - 前端/React/01.初认React.md
+        - 前端/React/02.构建项目.md
+        - 前端/React/03.JSX基础.md
+        - 前端/React/04.事件绑定.md
+        - 前端/React/05.组件基础使用.md
+        - 前端/React/06.useState基础使用.md
+        - 前端/React/07.基础样式控制.md
+        - 前端/React/08.案例_评论.md
+
+  - Storage:
+      - SQL:
+        - Storage/SQL基础.md
   - Backend:
       - Java:
         - 后端/Java/Java环境服务器配置.md

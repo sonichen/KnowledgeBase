@@ -1,1 +1,10 @@
-![network_en](assets\network_en.png)
+TCP
+
+reliable data transfer
+
+flow control
+
+connection management
+
+
+
