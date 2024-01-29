@@ -1,23 +1,22 @@
 # [Info]
 site_name: notes # 左上角标题
-# site_url: https://github.com/sonichen/notes
+site_url: https://github.com/sonichen/notes
 site_author: Soni
-site_description: notes
+site_description: Write something about CS.
 
 # [Navigtion]
 nav:
   - Home: index.html
         
-  - Tools:
+  - 工具:
       - Docker:
         - 工具/docker/Docker入门.md
       - Nginx:
         - 工具/nginx/nginx入门.md
-      - git:
+      - Git:
         - 工具/git/git简单操作.md
         - 工具/git/还原原仓库内容到修改的fork仓库.md
       - Version Control:
-        - 工具/版本控制/MDA.md
         - 工具/版本控制/DVC.md
         - 工具/版本控制/QuiltData.md
       - 敏感信息扫描:
@@ -27,7 +26,41 @@ nav:
         - 工具/博客搭建/mkdocs.md
         - 工具/博客搭建/VuePress.md
         - 工具/博客搭建/WordPress.md
-  - Frontend:
+  - 前端:
+      - Vue:
+        - 前端/Vue/Vue2后台管理系统.md
+        - 前端/Vue/Vue3安装.md
+        - 前端/Vue/vscode生成vue3模板.md
+      - React:
+        - 前端/React/01.初认React.md
+        - 前端/React/02.构建项目.md
+        - 前端/React/03.JSX基础.md
+        - 前端/React/04.事件绑定.md
+        - 前端/React/05.组件基础使用.md
+        - 前端/React/06.useState基础使用.md
+        - 前端/React/07.基础样式控制.md
+        - 前端/React/08.案例_评论.md
+      - Basic:
+          - HTML:
+              - 前端/HTML_CSS/note/HTML/查阅文档.md
+              - 前端/HTML_CSS/note/HTML/HTML概述和认识语法.md
+              - 前端/HTML_CSS/note/HTML/列表标签.md
+              - 前端/HTML_CSS/note/HTML/常用标签.md              
+              - 前端/HTML_CSS/note/HTML/注解和特殊字符.md
+              - 前端/HTML_CSS/note/HTML/表单标签.md
+              - 前端/HTML_CSS/note/HTML/表格标签.md
+          - CSS:
+            - 前端/HTML_CSS/note/CSS/CSS书写顺序.md
+            - 前端/HTML_CSS/note/CSS/CSS基本知识.md
+            - 前端/HTML_CSS/note/CSS/CSS基础选择器.md
+            - 前端/HTML_CSS/note/CSS/CSS的三大特性.md
+            - 前端/HTML_CSS/note/CSS/CSS的元素显示模式.md
+            - 前端/HTML_CSS/note/CSS/CSS的复合选择器.md
+            - 前端/HTML_CSS/note/CSS/CSS的背景.md
+            - 前端/HTML_CSS/note/CSS/CSS盒子模型学习.md
+            - 前端/HTML_CSS/note/CSS/圆角边框.md
+            - 前端/HTML_CSS/note/CSS/浮动.md
+            - 前端/HTML_CSS/note/CSS/设置字体、文本样式.md
       - JavaScript:
         - 前端/JavaScript/0.note.md
         - 前端/JavaScript/01.JavaScript介绍.md
@@ -43,27 +76,17 @@ nav:
         - 前端/JavaScript/11.操作DOM对象.md
         - 前端/JavaScript/12.表单.md
         - 前端/JavaScript/13.jQuery.md
-      - Vue:
-        - 前端/Vue/Vue2后台管理系统.md
-        - 前端/Vue/Vue3安装.md
-        - 前端/Vue/vscode生成vue3模板.md
-      - React:
-        - 前端/React/01.初认React.md
-        - 前端/React/02.构建项目.md
-        - 前端/React/03.JSX基础.md
-        - 前端/React/04.事件绑定.md
-        - 前端/React/05.组件基础使用.md
-        - 前端/React/06.useState基础使用.md
-        - 前端/React/07.基础样式控制.md
-        - 前端/React/08.案例_评论.md
-
-  - Storage:
+  - 数据库:
       - SQL:
         - Storage/SQL基础.md
-  - Backend:
+        - Storage/MySQL安装和SQLyog使用.md
+        - Storage/MySQL基本操作回顾.md
+  - 后端:
       - Java:
         - 后端/Java/Java环境服务器配置.md
         - 后端/Java/面试八股文(2022).md
+        - 后端/Java/Web环境搭建.md
+
       - Rust:
         - 入门:
           - 后端/Rust/入门/1. 认识Rust.md
@@ -76,12 +99,8 @@ nav:
           - 后端/Rust/入门/12. 项目实战-搜索关键词.md
         - 后端/Rust/Rust.md
         - 后端/Rust/发布到crates.io.md
-  - Reading:
-      - 阅读/从架构维度看Web2.0与Web3.0应用之别.md
-  - Basic:
-    - Network:
-        - basic/network/TransportLayer.md
-  - CourseNotes:
+  - 笔记:
+    - 大学笔记/index.md
     - 软件工程:
       - 大学笔记/notes/软件工程/1-软件工程学简介.md
       - 大学笔记/notes/软件工程/2-模型介绍.md
@@ -120,6 +139,18 @@ nav:
       - 大学笔记/notes/23种设计模式/23-Interpreter Pattern.md
       - 大学笔记/notes/23种设计模式/复习.md
       - 大学笔记/notes/23种设计模式/类图.md
+    - 概率论:
+      - 大学笔记/notes/概率论/13-From Randomness to Probability.md
+      - 大学笔记/notes/概率论/14-Probability Rules!.md
+      - 大学笔记/notes/概率论/15-Random Variables.md
+      - 大学笔记/notes/概率论/16-Probability Models.md
+      - 大学笔记/notes/概率论/17-Sampling Distribution Models.md
+      - 大学笔记/notes/概率论/18-Confidence Interval.md
+      - 大学笔记/notes/概率论/19-Testing Hypotheses About Proport.md
+      - 大学笔记/notes/概率论/20-Inferences About Means.md
+      - 大学笔记/notes/概率论/22.md
+      - 大学笔记/notes/概率论/23-Paired Samples and Blocks.md
+      - 大学笔记/notes/概率论/24-Comparing Counts.md
     - 计算机结构:
       - 大学笔记/notes/计算机结构/1-介绍.md
       - 大学笔记/notes/计算机结构/2-布尔代数1.md
@@ -161,31 +192,6 @@ nav:
         - 大学笔记/notes/软件测试/10-PathCoverage.md
       - 大学笔记/notes/软件测试/12-MutationTesting.md
       - 大学笔记/notes/软件测试/13-UnitTesting.md
-    - Prolog笔记:
-      - 大学笔记/notes/Prolog笔记/Arithmetic &Comparing Integers.md
-      - 大学笔记/notes/Prolog笔记/Lists&Member2.md
-      - 大学笔记/notes/Prolog笔记/Programming with Logic.md
-      - 大学笔记/notes/Prolog笔记/Recursion.md
-      - 大学笔记/notes/Prolog笔记/Unification&Proof search.md
-    - 概率论:
-      - 大学笔记/notes/概率论/13-From Randomness to Probability.md
-      - 大学笔记/notes/概率论/14-Probability Rules!.md
-      - 大学笔记/notes/概率论/15-Random Variables.md
-      - 大学笔记/notes/概率论/16-Probability Models.md
-      - 大学笔记/notes/概率论/17-Sampling Distribution Models.md
-      - 大学笔记/notes/概率论/18-Confidence Interval.md
-      - 大学笔记/notes/概率论/19-Testing Hypotheses About Proport.md
-      - 大学笔记/notes/概率论/20-Inferences About Means.md
-      - 大学笔记/notes/概率论/22.md
-      - 大学笔记/notes/概率论/23-Paired Samples and Blocks.md
-      - 大学笔记/notes/概率论/24-Comparing Counts.md
-    - 黑客相关:
-      - 大学笔记/notes/黑客基础/1-基本介绍&DVWA.md
-      - 大学笔记/notes/黑客基础/2-SQL工具注入(low).md
-      - 大学笔记/notes/黑客基础/3-SQL手工注入.md
-      - 大学笔记/notes/黑客基础/4-文件上传漏洞lowmedium.md
-      - 大学笔记/notes/黑客基础/5.1-文件上传漏洞（网站）.md
-      - 大学笔记/notes/黑客基础/5.2-弱口令爆破.md
     - 计算机视觉:
       - 大学笔记/notes/计算机视觉/02卷积与边缘提取-线性滤波器.md
       - 大学笔记/notes/计算机视觉/03边缘检测canny detection.md
@@ -207,28 +213,6 @@ nav:
       - 大学笔记/notes/图像的处理/4-角点检测Harris corner detection.md
       - 大学笔记/notes/图像的处理/6. SIFT.md
       - 大学笔记/notes/图像的处理/9 Ransac.md
-    - 逻辑学:
-      - 大学笔记/notes/逻辑学/2-Validity Inference.md
-      - 大学笔记/notes/逻辑学/3-Truth Tables.md
-      - 大学笔记/notes/逻辑学/4-Validity Inferences.md
-      - 大学笔记/notes/逻辑学/5-Expressiveness.md
-      - 大学笔记/notes/逻辑学/6-Deﬁning Sets.md
-      - 大学笔记/notes/逻辑学/7-Syllogistic Reasoning1.md
-      - 大学笔记/notes/逻辑学/8-Syllogistic Reasoning2.md
-      - 大学笔记/notes/逻辑学/9-Relations.md
-      - 大学笔记/notes/逻辑学/10-Representing and Classifying Rel.md
-      - 大学笔记/notes/逻辑学/11-Predicate Logic.md
-      - 大学笔记/notes/逻辑学/12-Predicate Logic (syntax).md
-      - 大学笔记/notes/逻辑学/13-Predicate Logic Models and Valid.md
-      - 大学笔记/notes/逻辑学/15-Natural Deduction - overview, ru.md
-      - 大学笔记/notes/逻辑学/16-Natural Deduction - rules for an.md
-      - 大学笔记/notes/逻辑学/17-Natural Deduction - rules for or.md
-      - 大学笔记/notes/逻辑学/19-Functions - basic definitions.md
-      - 大学笔记/notes/逻辑学/20-Functions - classifying.md
-      - 大学笔记/notes/逻辑学/21-Cardinality (Finite Sets).md
-      - 大学笔记/notes/逻辑学/22-Cardinality (Infinite Sets).md
-      - 大学笔记/notes/逻辑学/23-Transfinite Cardinals - a tour o.md
-
     - 数值计算:
       - 大学笔记/notes/数值计算/0 Introduction to Numerical Analysi.md
       - 大学笔记/notes/数值计算/1-Solving Equations.md
@@ -347,6 +331,20 @@ nav:
       - 大学笔记/notes/软件验证/L4-logic for program specification.md
       - 大学笔记/notes/软件验证/L7练习.md
       - 大学笔记/notes/软件验证/L8-9-Formal Proof in Logic.md
+    - Prolog笔记:
+      - 大学笔记/notes/Prolog笔记/Arithmetic &Comparing Integers.md
+      - 大学笔记/notes/Prolog笔记/Lists&Member2.md
+      - 大学笔记/notes/Prolog笔记/Programming with Logic.md
+      - 大学笔记/notes/Prolog笔记/Recursion.md
+      - 大学笔记/notes/Prolog笔记/Unification&Proof search.md
+    - 黑客相关:
+      - 大学笔记/notes/黑客基础/1-基本介绍&DVWA.md
+      - 大学笔记/notes/黑客基础/2-SQL工具注入(low).md
+      - 大学笔记/notes/黑客基础/3-SQL手工注入.md
+      - 大学笔记/notes/黑客基础/4-文件上传漏洞lowmedium.md
+      - 大学笔记/notes/黑客基础/5.1-文件上传漏洞（网站）.md
+      - 大学笔记/notes/黑客基础/5.2-弱口令爆破.md
+  
 # [UI]
 ## [top]
 theme:
@@ -383,11 +381,11 @@ repo_name:  notes
 ## [bottom-left corner]
 copyright: sonichen # 左下角的版权声明
 ## [bottom-right corner]
-# extra:
-#   social: # icons
-#     - icon: fontawesome/brands/github
-#       link: https://github.com/sonichen/notes
-#       name: GitHub | notes
+extra:
+  social: # icons
+    - icon: fontawesome/brands/github
+      link: https://github.com/sonichen/notes
+      name: GitHub | notes
 
 # [Extensions]
 plugins:
@@ -396,7 +394,9 @@ plugins:
       lang:
         - en
         - ja
-  - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  # - blog:
+      # post_url_date_format: yyyy/MM/dd #显示日期
+  # - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true
@@ -405,7 +405,7 @@ markdown_extensions:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
       # linenums: true # 显示行号
-      # auto_title: true # 显示编程语言名称
+      auto_title: true # 显示编程语言名称
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks

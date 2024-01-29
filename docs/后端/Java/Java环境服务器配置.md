@@ -25,10 +25,6 @@ sudo -i切换权限
 防火墙命令行有问题：
 sudo firewall-cmd --permanent --add-port=8083/tcp
 
-
-
-
-
 Linux后台运行Jar方法
 
 https://blog.csdn.net/c1481118216/article/details/53010963
