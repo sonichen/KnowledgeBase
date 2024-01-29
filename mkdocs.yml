@@ -65,6 +65,15 @@ nav:
         - 后端/Java/Java环境服务器配置.md
         - 后端/Java/面试八股文(2022).md
       - Rust:
+        - 入门:
+          - 后端/Rust/入门/1. 认识Rust.md
+          - 后端/Rust/入门/2. Rust入门猜数游戏案例.md
+          - 后端/Rust/入门/3.通用的编程概念（变量与可变性，变量类型，元组数组，函数，控制流-if, 循环）.md
+          - 后端/Rust/入门/4. 所有权，引用和借用，切片.md
+          - 后端/Rust/入门/5. Struct.md
+          - 后端/Rust/入门/6. 枚举-option-match和if let.md
+          - 后端/Rust/入门/7. Package和Crate定义module.md
+          - 后端/Rust/入门/12. 项目实战-搜索关键词.md
         - 后端/Rust/Rust.md
         - 后端/Rust/发布到crates.io.md
   - Reading:
@@ -72,128 +81,272 @@ nav:
   - Basic:
     - Network:
         - basic/network/TransportLayer.md
-  - 基础课:
-    - 算法1:
-        - 基础课笔记/notes/算法1/1 –Intro.md
-        - 基础课笔记/notes/算法1/2-Revision.md
-        - 基础课笔记/notes/算法1/3-Methods and Objects.md
-        - 基础课笔记/notes/算法1/4-Arrays and Array Algorithms.md
-        - 基础课笔记/notes/算法1/5-Big O Notation.md
-        - 基础课笔记/notes/算法1/6-sorting.md
-        - 基础课笔记/notes/算法1/7 – Stacks and Queues.md
-        - 基础课笔记/notes/算法1/7x-Heap Sort.md
-        - 基础课笔记/notes/算法1/8-LinkedList.md
-        - 基础课笔记/notes/算法1/9-recursion.md
-        - 基础课笔记/notes/算法1/10-Bit Manipulation.md
-    - 算法2:
-        - 基础课笔记/notes/算法2/1.0数据结构.md
-        - 基础课笔记/notes/算法2/1.1数据结构基本概念.md
-        - 基础课笔记/notes/算法2/1.2.1算法基本概念.md
-        - 基础课笔记/notes/算法2/1.2.2时间复杂度.md
-        - 基础课笔记/notes/算法2/1.2.3空间复杂度.md
-        - 基础课笔记/notes/算法2/2.1,线性表基本定义.md
-        - 基础课笔记/notes/算法2/2.2.1顺序表的增删.md
-        - 基础课笔记/notes/算法2/2.2.2顺序表查找.md
-        - 基础课笔记/notes/算法2/2.2顺序表.md
-        - 基础课笔记/notes/算法2/2.3.1单链表定义.md
-        - 基础课笔记/notes/算法2/2.3.2_1单链表的插入和删除.md
-        - 基础课笔记/notes/算法2/2.3.2_2单链表查找.md
-        - 基础课笔记/notes/算法2/2.3.2_3单链表的建立.md
-        - 基础课笔记/notes/算法2/2.3.3双链表.md
-        - 基础课笔记/notes/算法2/2.3.4循环链表.md
-        - 基础课笔记/notes/算法2/2.3.5静态链表.md
-        - 基础课笔记/notes/算法2/2.3.6顺序表VS链表.md
-        - 基础课笔记/notes/算法2/6.1基本定义.md
-        - 基础课笔记/notes/算法2/6.2.1图的存储-邻接矩阵.md
-        - 基础课笔记/notes/算法2/6.2.2图的存储-邻接表.md
-        - 基础课笔记/notes/算法2/6.2.3图的存储-十字链表，邻接多重表.md
-        - 基础课笔记/notes/算法2/6.2.4图的操作.md
-        - 基础课笔记/notes/算法2/6.3.1 图的遍历DFS.md
-        - 基础课笔记/notes/算法2/6.3.1图的遍历BFS.md
-        - 基础课笔记/notes/算法2/6.4.1最小生成树.md
-        - 基础课笔记/notes/算法2/6.4.2 最短路径BFS算法.md
-        - 基础课笔记/notes/算法2/6.4.3 Dijkstra算法（带权图，无权图）.md
-        - 基础课笔记/notes/算法2/6.4.4 Floyd算法.md
-        - 基础课笔记/notes/算法2/6.4.5 有向无环图.md
-        - 基础课笔记/notes/算法2/6.4.6 拓扑排序.md
-        - 基础课笔记/notes/算法2/6.4.7关键路径.md
-        - 基础课笔记/notes/算法2/最短路径.md
-    - 软件测试:
-      - 基础课笔记/notes/软件测试/0-介绍.md
-      - 基础课笔记/notes/软件测试/1-Perspectives and Concepts.md
-      - 基础课笔记/notes/软件测试/10-Path Coverage.md
-      - 基础课笔记/notes/软件测试/12-MutationTesting.md
-      - 基础课笔记/notes/软件测试/13-Unit Testing Object-Oriented Sof.md
-      - 基础课笔记/notes/软件测试/2-Test Design Process.md
-      - 基础课笔记/notes/软件测试/3–Equivalence Class Testing.md
-      - 基础课笔记/notes/软件测试/4-Boundary Value Testing 边界测试.md
-      - 基础课笔记/notes/软件测试/5-Combinational Testing组合测试.md
-      - 基础课笔记/notes/软件测试/6.1-Random Testing &.md
-      - 基础课笔记/notes/软件测试/6.2-Error Guessing.md
-      - 基础课笔记/notes/软件测试/7-Statement Coverage.md
-      - 基础课笔记/notes/软件测试/8-Branch Coverage.md
-      - 基础课笔记/notes/软件测试/9.1-Condition Coverage.md
-      - 基础课笔记/notes/软件测试/9.2-Multiple Condition Coverage.md
-      - 基础课笔记/notes/软件测试/Functional Testing Summary.md
-      - 基础课笔记/notes/软件测试/白盒测试.md
-      - 基础课笔记/notes/软件测试/黑盒测试.md
-    - 操作系统:
-      - 基础课笔记/notes/操作系统/1-认识操作系统.md
-      - 基础课笔记/notes/操作系统/10-线程-1.md
-      - 基础课笔记/notes/操作系统/10-线程.md
-      - 基础课笔记/notes/操作系统/11-The Mutual Exclusion Problem.md
-      - 基础课笔记/notes/操作系统/12-Algorithmic Solutions to the Mut.md
-      - 基础课笔记/notes/操作系统/13-信号量.md
-      - 基础课笔记/notes/操作系统/19,20内存管理.md
-      - 基础课笔记/notes/操作系统/19补充.md
-      - 基础课笔记/notes/操作系统/2-进程管理.md
-      - 基础课笔记/notes/操作系统/20-2文件的物理结构.md
-      - 基础课笔记/notes/操作系统/34-传统的Unix调度程序（）.md
-      - 基础课笔记/notes/操作系统/34-抢占式算法.md
-      - 基础课笔记/notes/操作系统/34-进程调度概念和公式.md
-      - 基础课笔记/notes/操作系统/34-非抢占式算.md
-      - 基础课笔记/notes/操作系统/5-多处理器调度-().md
-      - 基础课笔记/notes/操作系统/6-磁性硬盘操作和调度.md
-      - 基础课笔记/notes/操作系统/7-Unix流程管理和进程间通信.md
-      - 基础课笔记/notes/操作系统/8-Unix进程间通信机制.md
-      - 基础课笔记/notes/操作系统/9-进程间通信机制.md
-      - 基础课笔记/notes/操作系统/进程调度算法1.md
-      - 基础课笔记/notes/操作系统/进程调度算法2.md
-    - 概率论:
-      - 基础课笔记/notes/概率论/13-From Randomness to Probability.md
-      - 基础课笔记/notes/概率论/14-Probability Rules!.md
-      - 基础课笔记/notes/概率论/15-Random Variables.md
-      - 基础课笔记/notes/概率论/16-Probability Models.md
-      - 基础课笔记/notes/概率论/17-Sampling Distribution Models.md
-      - 基础课笔记/notes/概率论/18-Confidence Interval.md
-    - 计算机结构:
-      - 基础课笔记/notes/计算机结构/1-介绍.md
-      - 基础课笔记/notes/计算机结构/11&12.md
-      - 基础课笔记/notes/计算机结构/13&14.md
-      - 基础课笔记/notes/计算机结构/15&16.md
-      - 基础课笔记/notes/计算机结构/1516补充.md
-      - 基础课笔记/notes/计算机结构/17&18.md
-      - 基础课笔记/notes/计算机结构/19&20.md
-      - 基础课笔记/notes/计算机结构/2-布尔代数1.md
-      - 基础课笔记/notes/计算机结构/3-延迟问题.md
-      - 基础课笔记/notes/计算机结构/4-K-Maps.md
-      - 基础课笔记/notes/计算机结构/5-进制转换.md
-      - 基础课笔记/notes/计算机结构/6-全加器&&全减器.md
-      - 基础课笔记/notes/计算机结构/6-补充.md
-      - 基础课笔记/notes/计算机结构/7&8-信息传输和相关配件.md
-      - 基础课笔记/notes/计算机结构/7&8-总结.md
-      - 基础课笔记/notes/计算机结构/9&10-Sequential Logic Design.md
-      - 基础课笔记/notes/计算机结构/9&10总结.md
-      - 基础课笔记/notes/计算机结构/9-D,JK,主从JK.md
-      - 基础课笔记/notes/计算机结构/9-补充-触发器.md
+  - CourseNotes:
     - 软件工程:
-      - 基础课笔记/notes/软件工程/1-软件工程学简介.md
-      - 基础课笔记/notes/软件工程/10-小记.md
-      - 基础课笔记/notes/软件工程/10-测试.md
-      - 基础课笔记/notes/软件工程/11-Project Management&Risk.md
-      - 基础课笔记/notes/软件工程/2-模型介绍.md
-      - 基础课笔记/notes/软件工程/6-Architectural Design.md
-      - 基础课笔记/notes/软件工程/9-用户界面(UI)设计和用户体验(UX)设计.md
+      - 大学笔记/notes/软件工程/1-软件工程学简介.md
+      - 大学笔记/notes/软件工程/2-模型介绍.md
+      - 大学笔记/notes/软件工程/3-敏捷开发.md
+      - 大学笔记/notes/软件工程/4-Requirements Engineering.md
+      - 大学笔记/notes/软件工程/5-System Modelling.md
+      - 大学笔记/notes/软件工程/6-Architectural Design.md
+      - 大学笔记/notes/软件工程/7-系统分析、建模与设计.md
+      - 大学笔记/notes/软件工程/8- 设计模式 
+      - 大学笔记/notes/软件工程/9-用户界面(UI)设计和用户体验(UX)设计.md
+      - 大学笔记/notes/软件工程/10-测试.md
+      - 大学笔记/notes/软件工程/11-Project Management&Risk.md
+    - 23种设计模式:
+      - 大学笔记/notes/23种设计模式/1-Singleton Pattern.md
+      - 大学笔记/notes/23种设计模式/2-Prototype Pattern.md
+      - 大学笔记/notes/23种设计模式/3-Builder Pattern.md
+      - 大学笔记/notes/23种设计模式/4-Factory Method Pattern.md
+      - 大学笔记/notes/23种设计模式/5-Abstract Pattern.md
+      - 大学笔记/notes/23种设计模式/6-Proxy Pattern.md
+      - 大学笔记/notes/23种设计模式/7-Decorator Pattern.md
+      - 大学笔记/notes/23种设计模式/8-Adapter Pattern.md
+      - 大学笔记/notes/23种设计模式/9-Façade Pattern.md
+      - 大学笔记/notes/23种设计模式/10-Flyweight Pattern.md
+      - 大学笔记/notes/23种设计模式/11-Composite Pattern.md
+      - 大学笔记/notes/23种设计模式/12-Bridge Pattern.md
+      - 大学笔记/notes/23种设计模式/13-Visitor Pattern.md
+      - 大学笔记/notes/23种设计模式/14-Observer Pattern.md
+      - 大学笔记/notes/23种设计模式/15-Strategy (Policy) Pattern.md
+      - 大学笔记/notes/23种设计模式/16-Template Method Pattern.md
+      - 大学笔记/notes/23种设计模式/17-Command Pattern.md
+      - 大学笔记/notes/23种设计模式/18-Iterator Pattern.md
+      - 大学笔记/notes/23种设计模式/19-Memento Pattern.md
+      - 大学笔记/notes/23种设计模式/20-State Pattern.md
+      - 大学笔记/notes/23种设计模式/21-Mediator Pattern.md
+      - 大学笔记/notes/23种设计模式/22-Chain-of-Responsibility.md
+      - 大学笔记/notes/23种设计模式/23-Interpreter Pattern.md
+      - 大学笔记/notes/23种设计模式/复习.md
+      - 大学笔记/notes/23种设计模式/类图.md
+    - 计算机结构:
+      - 大学笔记/notes/计算机结构/1-介绍.md
+      - 大学笔记/notes/计算机结构/2-布尔代数1.md
+      - 大学笔记/notes/计算机结构/3-延迟问题.md
+      - 大学笔记/notes/计算机结构/4-K-Maps.md
+      - 大学笔记/notes/计算机结构/5-进制转换.md
+      - 大学笔记/notes/计算机结构/6-全加器&&全减器.md
+      - 大学笔记/notes/计算机结构/6-补充.md
+      - 大学笔记/notes/计算机结构/7&8-信息传输和相关配件.md
+      - 大学笔记/notes/计算机结构/7&8-总结.md
+      - 大学笔记/notes/计算机结构/9&10-Sequential Logic Design.md
+      - 大学笔记/notes/计算机结构/9&10总结.md
+      - 大学笔记/notes/计算机结构/9-D,JK,主从JK.md
+      - 大学笔记/notes/计算机结构/9-补充-触发器.md
+      - 大学笔记/notes/计算机结构/11&12.md
+      - 大学笔记/notes/计算机结构/13&14.md
+      - 大学笔记/notes/计算机结构/15&16.md
+      - 大学笔记/notes/计算机结构/1516补充.md
+      - 大学笔记/notes/计算机结构/17&18.md
+      - 大学笔记/notes/计算机结构/19&20.md
+    - 软件测试:
+      - 大学笔记/notes/软件测试/0-介绍.md
+      - 大学笔记/notes/软件测试/1-PerspectivesandConcepts.md
+      - 大学笔记/notes/软件测试/2-TestDesignProcess.md
+      - 黑盒测试:
+        - 大学笔记/notes/软件测试/黑盒测试.md
+        - 大学笔记/notes/软件测试/3–EquivalenceClassTesting.md
+        - 大学笔记/notes/软件测试/4-BoundaryValueTesting 边界测试.md
+        - 大学笔记/notes/软件测试/5-CombinationalTesting组合测试.md
+        - 大学笔记/notes/软件测试/6.1-RandomTesting.md
+        - 大学笔记/notes/软件测试/6.2-ErrorGuessing.md
+        - 大学笔记/notes/软件测试/FunctionalTestingSummary.md
+      - 白盒测试:
+        - 大学笔记/notes/软件测试/白盒测试.md
+        - 大学笔记/notes/软件测试/7-StatementCoverage.md
+        - 大学笔记/notes/软件测试/8-BranchCoverage.md
+        - 大学笔记/notes/软件测试/9.1-ConditionCoverage.md
+        - 大学笔记/notes/软件测试/9.2-MultipleConditionCoverage.md
+        - 大学笔记/notes/软件测试/10-PathCoverage.md
+      - 大学笔记/notes/软件测试/12-MutationTesting.md
+      - 大学笔记/notes/软件测试/13-UnitTesting.md
+    - Prolog笔记:
+      - 大学笔记/notes/Prolog笔记/Arithmetic &Comparing Integers.md
+      - 大学笔记/notes/Prolog笔记/Lists&Member2.md
+      - 大学笔记/notes/Prolog笔记/Programming with Logic.md
+      - 大学笔记/notes/Prolog笔记/Recursion.md
+      - 大学笔记/notes/Prolog笔记/Unification&Proof search.md
+    - 概率论:
+      - 大学笔记/notes/概率论/13-From Randomness to Probability.md
+      - 大学笔记/notes/概率论/14-Probability Rules!.md
+      - 大学笔记/notes/概率论/15-Random Variables.md
+      - 大学笔记/notes/概率论/16-Probability Models.md
+      - 大学笔记/notes/概率论/17-Sampling Distribution Models.md
+      - 大学笔记/notes/概率论/18-Confidence Interval.md
+      - 大学笔记/notes/概率论/19-Testing Hypotheses About Proport.md
+      - 大学笔记/notes/概率论/20-Inferences About Means.md
+      - 大学笔记/notes/概率论/22.md
+      - 大学笔记/notes/概率论/23-Paired Samples and Blocks.md
+      - 大学笔记/notes/概率论/24-Comparing Counts.md
+    - 黑客相关:
+      - 大学笔记/notes/黑客基础/1-基本介绍&DVWA.md
+      - 大学笔记/notes/黑客基础/2-SQL工具注入(low).md
+      - 大学笔记/notes/黑客基础/3-SQL手工注入.md
+      - 大学笔记/notes/黑客基础/4-文件上传漏洞lowmedium.md
+      - 大学笔记/notes/黑客基础/5.1-文件上传漏洞（网站）.md
+      - 大学笔记/notes/黑客基础/5.2-弱口令爆破.md
+    - 计算机视觉:
+      - 大学笔记/notes/计算机视觉/02卷积与边缘提取-线性滤波器.md
+      - 大学笔记/notes/计算机视觉/03边缘检测canny detection.md
+      - 大学笔记/notes/计算机视觉/04拟合fitting-ransac, hough.md
+      - 大学笔记/notes/计算机视觉/05Harris角点检测.md
+      - 大学笔记/notes/计算机视觉/06Blob detection.md
+      - 大学笔记/notes/计算机视觉/07SIFT.md
+      - 大学笔记/notes/计算机视觉/08Texture 纹理.md
+      - 大学笔记/notes/计算机视觉/Canny detection.md
+      - 大学笔记/notes/计算机视觉/小记.md
+      - 大学笔记/notes/计算机视觉/直方图均衡.md
+      - 大学笔记/notes/计算机视觉/霍夫.md
+    - 图像的处理:
+      - 大学笔记/notes/图像的处理/1.Image processing from scratch从零开始.md
+      - 大学笔记/notes/图像的处理/2.1卷积基础.md
+      - 大学笔记/notes/图像的处理/2.2 Canny detection.md
+      - 大学笔记/notes/图像的处理/3.1 Hough transform霍夫变换直线检测.md
+      - 大学笔记/notes/图像的处理/3.2 Hough circle(霍夫圆变换).md
+      - 大学笔记/notes/图像的处理/4-角点检测Harris corner detection.md
+      - 大学笔记/notes/图像的处理/6. SIFT.md
+      - 大学笔记/notes/图像的处理/9 Ransac.md
+    - 逻辑学:
+      - 大学笔记/notes/逻辑学/2-Validity Inference.md
+      - 大学笔记/notes/逻辑学/3-Truth Tables.md
+      - 大学笔记/notes/逻辑学/4-Validity Inferences.md
+      - 大学笔记/notes/逻辑学/5-Expressiveness.md
+      - 大学笔记/notes/逻辑学/6-Deﬁning Sets.md
+      - 大学笔记/notes/逻辑学/7-Syllogistic Reasoning1.md
+      - 大学笔记/notes/逻辑学/8-Syllogistic Reasoning2.md
+      - 大学笔记/notes/逻辑学/9-Relations.md
+      - 大学笔记/notes/逻辑学/10-Representing and Classifying Rel.md
+      - 大学笔记/notes/逻辑学/11-Predicate Logic.md
+      - 大学笔记/notes/逻辑学/12-Predicate Logic (syntax).md
+      - 大学笔记/notes/逻辑学/13-Predicate Logic Models and Valid.md
+      - 大学笔记/notes/逻辑学/15-Natural Deduction - overview, ru.md
+      - 大学笔记/notes/逻辑学/16-Natural Deduction - rules for an.md
+      - 大学笔记/notes/逻辑学/17-Natural Deduction - rules for or.md
+      - 大学笔记/notes/逻辑学/19-Functions - basic definitions.md
+      - 大学笔记/notes/逻辑学/20-Functions - classifying.md
+      - 大学笔记/notes/逻辑学/21-Cardinality (Finite Sets).md
+      - 大学笔记/notes/逻辑学/22-Cardinality (Infinite Sets).md
+      - 大学笔记/notes/逻辑学/23-Transfinite Cardinals - a tour o.md
+
+    - 数值计算:
+      - 大学笔记/notes/数值计算/0 Introduction to Numerical Analysi.md
+      - 大学笔记/notes/数值计算/1-Solving Equations.md
+      - 大学笔记/notes/数值计算/2-Systems of Equations课件.md
+      - 大学笔记/notes/数值计算/3 Interpolation重点.md
+      - 大学笔记/notes/数值计算/3-Interpolation.md
+      - 大学笔记/notes/数值计算/4-Least Squares.md
+      - 大学笔记/notes/数值计算/4-Least Squares重点.md
+      - 大学笔记/notes/数值计算/5 - 数值差异计算与积分法.md
+      - 大学笔记/notes/数值计算/6-Ordinary Differential Equations.md
+      - 大学笔记/notes/数值计算/6-Ordinary Differential Equations重点.md
+      - 大学笔记/notes/数值计算/6-常微分方程.md
+      - 大学笔记/notes/数值计算/7-边值问题.md
+      - 大学笔记/notes/数值计算/复习重点.md
+      - 大学笔记/notes/数值计算/求导公式.md
+    - 数学建模:
+      - 大学笔记/notes/数学建模/图论模型-Dijkstra算法.md
+      - 大学笔记/notes/数学建模/图论模型-Floyd算法.md
+      - 大学笔记/notes/数学建模/多属性决策模型.md
+      - 大学笔记/notes/数学建模/层次分析法.md
+      - 大学笔记/notes/数学建模/应用场景.md
+      - 大学笔记/notes/数学建模/模拟退火模型.md
+      - 大学笔记/notes/数学建模/灰色预测.md
+      - 大学笔记/notes/数学建模/种群竞争模型.md
+      - 大学笔记/notes/数学建模/线性规划.md
+      - 大学笔记/notes/数学建模/非线性规划与01规划模型.md
+    - 算法1:
+        - 大学笔记/notes/算法1/1 –Intro.md
+        - 大学笔记/notes/算法1/2-Revision.md
+        - 大学笔记/notes/算法1/3-Methods and Objects.md
+        - 大学笔记/notes/算法1/4-Arrays and Array Algorithms.md
+        - 大学笔记/notes/算法1/5-Big O Notation.md
+        - 大学笔记/notes/算法1/6-sorting.md
+        - 大学笔记/notes/算法1/7 – Stacks and Queues.md
+        - 大学笔记/notes/算法1/7x-Heap Sort.md
+        - 大学笔记/notes/算法1/8-LinkedList.md
+        - 大学笔记/notes/算法1/9-recursion.md
+        - 大学笔记/notes/算法1/10-Bit Manipulation.md
+    - 算法2:
+        - 大学笔记/notes/算法2/1.0数据结构.md
+        - 大学笔记/notes/算法2/1.1数据结构基本概念.md
+        - 大学笔记/notes/算法2/1.2.1算法基本概念.md
+        - 大学笔记/notes/算法2/1.2.2时间复杂度.md
+        - 大学笔记/notes/算法2/1.2.3空间复杂度.md
+        - 大学笔记/notes/算法2/2.1,线性表基本定义.md
+        - 大学笔记/notes/算法2/2.2.1顺序表的增删.md
+        - 大学笔记/notes/算法2/2.2.2顺序表查找.md
+        - 大学笔记/notes/算法2/2.2顺序表.md
+        - 大学笔记/notes/算法2/2.3.1单链表定义.md
+        - 大学笔记/notes/算法2/2.3.2_1单链表的插入和删除.md
+        - 大学笔记/notes/算法2/2.3.2_2单链表查找.md
+        - 大学笔记/notes/算法2/2.3.2_3单链表的建立.md
+        - 大学笔记/notes/算法2/2.3.3双链表.md
+        - 大学笔记/notes/算法2/2.3.4循环链表.md
+        - 大学笔记/notes/算法2/2.3.5静态链表.md
+        - 大学笔记/notes/算法2/2.3.6顺序表VS链表.md
+        - 大学笔记/notes/算法2/6.1基本定义.md
+        - 大学笔记/notes/算法2/6.2.1图的存储-邻接矩阵.md
+        - 大学笔记/notes/算法2/6.2.2图的存储-邻接表.md
+        - 大学笔记/notes/算法2/6.2.3图的存储-十字链表，邻接多重表.md
+        - 大学笔记/notes/算法2/6.2.4图的操作.md
+        - 大学笔记/notes/算法2/6.3.1 图的遍历DFS.md
+        - 大学笔记/notes/算法2/6.3.1图的遍历BFS.md
+        - 大学笔记/notes/算法2/6.4.1最小生成树.md
+        - 大学笔记/notes/算法2/6.4.2 最短路径BFS算法.md
+        - 大学笔记/notes/算法2/6.4.3 Dijkstra算法（带权图，无权图）.md
+        - 大学笔记/notes/算法2/6.4.4 Floyd算法.md
+        - 大学笔记/notes/算法2/6.4.5 有向无环图.md
+        - 大学笔记/notes/算法2/6.4.6 拓扑排序.md
+        - 大学笔记/notes/算法2/6.4.7关键路径.md
+        - 大学笔记/notes/算法2/最短路径.md
+    - 算法3:
+      - 大学笔记/notes/算法3/11-Hash.md
+      - 大学笔记/notes/算法3/12-Binary Search Tree.md
+      - 大学笔记/notes/算法3/13-avl.md
+      - 大学笔记/notes/算法3/14-红黑树.md
+      - 大学笔记/notes/算法3/14-红黑树补充.md
+      - 大学笔记/notes/算法3/15-Trie Data Structure.md
+      - 大学笔记/notes/算法3/16-图-BFS.md
+      - 大学笔记/notes/算法3/16-图-DFS.md
+      - 大学笔记/notes/算法3/16-图-拓扑排序.md
+      - 大学笔记/notes/算法3/16-图.md
+      - 大学笔记/notes/算法3/17-贪心算法.md
+      - 大学笔记/notes/算法3/18-最小生成树Minimum Spanning Tree.md
+      - 大学笔记/notes/算法3/19-最短路径.md
+      - 大学笔记/notes/算法3/20-N&NP&NPC.md
+    - 操作系统:
+      - 大学笔记/notes/操作系统/1-认识操作系统.md
+      - 大学笔记/notes/操作系统/2-进程管理.md
+      - 大学笔记/notes/操作系统/34-传统的Unix调度程序（）.md
+      - 大学笔记/notes/操作系统/34-抢占式算法.md
+      - 大学笔记/notes/操作系统/34-进程调度概念和公式.md
+      - 大学笔记/notes/操作系统/34-非抢占式算.md
+      - 大学笔记/notes/操作系统/5-多处理器调度-().md
+      - 大学笔记/notes/操作系统/6-磁性硬盘操作和调度.md
+      - 大学笔记/notes/操作系统/7-Unix流程管理和进程间通信.md
+      - 大学笔记/notes/操作系统/8-Unix进程间通信机制.md
+      - 大学笔记/notes/操作系统/9-进程间通信机制.md
+      - 大学笔记/notes/操作系统/10-线程-1.md
+      - 大学笔记/notes/操作系统/10-线程.md
+      - 大学笔记/notes/操作系统/11-The Mutual Exclusion Problem.md
+      - 大学笔记/notes/操作系统/12-Algorithmic Solutions to the Mut.md
+      - 大学笔记/notes/操作系统/13-信号量.md
+      - 大学笔记/notes/操作系统/19,20内存管理.md
+      - 大学笔记/notes/操作系统/19补充.md
+      - 大学笔记/notes/操作系统/20-2文件的物理结构.md
+      - 大学笔记/notes/操作系统/进程调度算法1.md
+      - 大学笔记/notes/操作系统/进程调度算法2.md
+    - 软件验证:
+      - 大学笔记/notes/软件验证/5 – First Order Logic.md
+      - 大学笔记/notes/软件验证/6-First Order Logic (Part 2).md
+      - 大学笔记/notes/软件验证/7 – First Order Logic -Proof.md
+      - 大学笔记/notes/软件验证/L1-introduction.md
+      - 大学笔记/notes/软件验证/L2-Design by Contract.md
+      - 大学笔记/notes/软件验证/L3- Logic for Program  Specificatio.md
+      - 大学笔记/notes/软件验证/L4-logic for program specification.md
+      - 大学笔记/notes/软件验证/L7练习.md
+      - 大学笔记/notes/软件验证/L8-9-Formal Proof in Logic.md
 # [UI]
 ## [top]
 theme:
@@ -215,7 +368,7 @@ theme:
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    - navigation.expand # 打开Tab时左侧目录全部展开
+    # - navigation.expand # 打开Tab时左侧目录全部展开
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
