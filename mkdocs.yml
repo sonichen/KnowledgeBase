@@ -9,6 +9,7 @@ nav:
   - Home: index.html
         
   - 工具:
+      - 工具/onenote导出markdown.md
       - Docker:
         - 工具/docker/Docker入门.md
       - Nginx:
@@ -86,6 +87,14 @@ nav:
         - 后端/Java/Java环境服务器配置.md
         - 后端/Java/面试八股文(2022).md
         - 后端/Java/Web环境搭建.md
+        - 入门:
+          - 后端/Java/入门/Java/基础语法/计算机基础.md
+          - 后端/Java/入门/Java/基础语法/认识Java_进制_注解.md
+          - 后端/Java/入门/Java/基础语法/变量.md
+          - 后端/Java/入门/Java/基础语法/运算符.md
+          - 后端/Java/入门/Java/基础语法/流程控制.md
+          - 后端/Java/入门/Java/基础语法/输入输出.md
+          - 后端/Java/入门/Java/基础语法/数组Array.md
 
       - Rust:
         - 入门:
