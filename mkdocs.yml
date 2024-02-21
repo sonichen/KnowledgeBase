@@ -108,6 +108,8 @@ nav:
           - 后端/Rust/入门/12. 项目实战-搜索关键词.md
         - 后端/Rust/Rust.md
         - 后端/Rust/发布到crates.io.md
+  - 其他:
+      - others/google账号无法登录.md
   - 笔记:
     - 大学笔记/index.md
     - 软件工程:
