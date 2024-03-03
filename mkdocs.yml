@@ -8,7 +8,7 @@ site_description: Write something about CS.
 nav:
   - Home: index.html
         
-  - 工具:
+  - Tools:
       - 工具/onenote导出markdown.md
       - Docker:
         - 工具/docker/Docker入门.md
@@ -17,6 +17,15 @@ nav:
       - Git:
         - 工具/git/git简单操作.md
         - 工具/git/还原原仓库内容到修改的fork仓库.md
+      - PPT:
+        - 工具/PPT/notes/PPT/01基本操作.md
+        - 工具/PPT/notes/PPT/02字体.md
+        - 工具/PPT/notes/PPT/03形状.md
+        - 工具/PPT/notes/PPT/04图片.md
+        - 工具/PPT/notes/PPT/05配色.md
+        - 工具/PPT/notes/PPT/06排版.md
+        - 工具/PPT/notes/PPT/07动画.md
+        - 工具/PPT/notes/PPT/08工作性PPT.md
       - Version Control:
         - 工具/版本控制/DVC.md
         - 工具/版本控制/QuiltData.md
@@ -27,7 +36,7 @@ nav:
         - 工具/博客搭建/mkdocs.md
         - 工具/博客搭建/VuePress.md
         - 工具/博客搭建/WordPress.md
-  - 前端:
+  - Frontend:
       - Vue:
         - 前端/Vue/Vue2后台管理系统.md
         - 前端/Vue/Vue3安装.md
@@ -77,12 +86,12 @@ nav:
         - 前端/JavaScript/11.操作DOM对象.md
         - 前端/JavaScript/12.表单.md
         - 前端/JavaScript/13.jQuery.md
-  - 数据库:
+  - Database:
       - SQL:
         - Storage/SQL基础.md
         - Storage/MySQL安装和SQLyog使用.md
         - Storage/MySQL基本操作回顾.md
-  - 后端:
+  - Backend:
       - Java:
         - 后端/Java/Java环境服务器配置.md
         - 后端/Java/面试八股文(2022).md
@@ -95,7 +104,125 @@ nav:
           - 后端/Java/入门/Java/基础语法/流程控制.md
           - 后端/Java/入门/Java/基础语法/输入输出.md
           - 后端/Java/入门/Java/基础语法/数组Array.md
+        - 面对对象:
+          - 上:
+            - 后端/Java/入门/Java/面对对象/上/关键字package、import.md
+            - 后端/Java/入门/Java/面对对象/上/关键字this.md
+            - 后端/Java/入门/Java/面对对象/上/内存.md
+            - 后端/Java/入门/Java/面对对象/上/封装与隐藏.md
+            - 后端/Java/入门/Java/面对对象/上/属性.md
+            - 后端/Java/入门/Java/面对对象/上/方法（函数）.md
+            - 后端/Java/入门/Java/面对对象/上/构造器.md
+            - 后端/Java/入门/Java/面对对象/上/类和对象.md
+            - 后端/Java/入门/Java/面对对象/上/面对对象与面对过程.md
+          - 中:
+            - 后端/Java/入门/Java/面对对象/中/Object类的使用.md
+            - 后端/Java/入门/Java/面对对象/中/关键字super.md
+            - 后端/Java/入门/Java/面对对象/中/包装类的使用.md
+            - 后端/Java/入门/Java/面对对象/中/多态性.md
+            - 后端/Java/入门/Java/面对对象/中/子类对象实例化过程.md
+            - 后端/Java/入门/Java/面对对象/中/方法重写override.md
+            - 后端/Java/入门/Java/面对对象/中/继承性inheritance.md
+          - 下:
+            - 后端/Java/入门/Java/面对对象/下/main方法的语法.md
+            - 后端/Java/入门/Java/面对对象/下/package restaurant.service;.md
+            - 后端/Java/入门/Java/面对对象/下/代码块.md
+            - 后端/Java/入门/Java/面对对象/下/关键字final.md
+            - 后端/Java/入门/Java/面对对象/下/关键字static.md
+            - 后端/Java/入门/Java/面对对象/下/内部类.md
+            - 后端/Java/入门/Java/面对对象/下/单例设计模式.md
+            - 后端/Java/入门/Java/面对对象/下/认.md
+            - 后端/Java/入门/Java/面对对象/下/异常.md
+            - 后端/Java/入门/Java/面对对象/下/抽象类与抽象方法.md
+            - 后端/Java/入门/Java/面对对象/下/接口interface.md
+        - 高级:
+          - GUI:
+            - 后端/Java/入门/Java/高级/GUI/GUI概述.md
+            - 后端/Java/入门/Java/高级/GUI/jar包双击执行.md
+            - 后端/Java/入门/Java/高级/GUI/JFrame.md
+            - 后端/Java/入门/Java/高级/GUI/菜单制作.md
+            - 后端/Java/入门/Java/高级/GUI/贪吃蛇.md
+            - 后端/Java/入门/Java/高级/GUI/重点：模拟文件查询.md
+            - 后端/Java/入门/Java/高级/GUI/重点：记事本制作.md
+            - 后端/Java/入门/Java/高级/GUI/鼠标键盘.md
+          - IO:
+            - 后端/Java/入门/Java/高级/IO/Files.md
+            - 后端/Java/入门/Java/高级/IO/IP.md
+            - 后端/Java/入门/Java/高级/IO/NIO.md
+            - 后端/Java/入门/Java/高级/IO/Path.md
+            - 后端/Java/入门/Java/高级/IO/RandomAccessFile.md
+            - 后端/Java/入门/Java/高级/IO/图片加密，字符计算.md
+            - 后端/Java/入门/Java/高级/IO/对象序列化机制.md
+            # - 后端/Java/入门/Java/高级/IO/标准的输入输出流，打印流，数据流.md
+            - 后端/Java/入门/Java/高级/IO/概述和方法.md
+            - 后端/Java/入门/Java/高级/IO/流的分类.md
+            - 后端/Java/入门/Java/高级/IO/端口.md
+            - 后端/Java/入门/Java/高级/IO/第三方jar包.md
+            - 后端/Java/入门/Java/高级/IO/缓冲流.md
+            - 后端/Java/入门/Java/高级/IO/网络编程概述.md
+            - 后端/Java/入门/Java/高级/IO/转换流.md
+          - Java常用类:
+            - 后端/Java/入门/Java/Java常用类/BigInteger与BigDecimal.md
+            - 后端/Java/入门/Java/Java常用类/java.util.Date类.md
+            - 后端/Java/入门/Java/Java常用类/Java比较器.md
+            - 后端/Java/入门/Java/Java常用类/JDK 8之前的日期时间API.md
+            - 后端/Java/入门/Java/Java常用类/Math类.md
+            - 后端/Java/入门/Java/Java常用类/String.md
+            - 后端/Java/入门/Java/Java常用类/StringBuffer、StringBuilder.md
+            - 后端/Java/入门/Java/Java常用类/String练习-1.md
+            - 后端/Java/入门/Java/Java常用类/String练习.md
+            - 后端/Java/入门/Java/Java常用类/System类.md
+          - 多线程:
+            - 后端/Java/入门/Java/高级/多线程/Lock锁.md
+            - 后端/Java/入门/Java/高级/多线程/Thread类的有关方法.md
+            - 后端/Java/入门/Java/高级/多线程/创建线程的4种方法.md
+            - 后端/Java/入门/Java/高级/多线程/基本概念.md
+            - 后端/Java/入门/Java/高级/多线程/存钱练习.md
+            - 后端/Java/入门/Java/高级/多线程/懒汉式线程安全.md
+            - 后端/Java/入门/Java/高级/多线程/死锁.md
+            - 后端/Java/入门/Java/高级/多线程/源代码.md
+            - 后端/Java/入门/Java/高级/多线程/线程同步-售票问题.md
+            - 后端/Java/入门/Java/高级/多线程/线程的生命周期.md
+            - 后端/Java/入门/Java/高级/多线程/线程通信.md
+            - 后端/Java/入门/Java/高级/多线程/练习.md
 
+          - 反射:
+            - 后端/Java/入门/Java/高级/反射/创建运行时类的对象-1.md
+            - 后端/Java/入门/Java/高级/反射/创建运行时类的对象.md
+            - 后端/Java/入门/Java/高级/反射/动态代理.md
+            - 后端/Java/入门/Java/高级/反射/概述.md
+            - 后端/Java/入门/Java/高级/反射/理解.md
+            - 后端/Java/入门/Java/高级/反射/类的加载和ClassLoad.md
+            - 后端/Java/入门/Java/高级/反射/获取Class实例.md
+            - 后端/Java/入门/Java/高级/反射/获取运行时类的完整结构.md
+          - 泛型:
+            - 后端/Java/入门/Java/高级/泛型/概述.md
+            - 后端/Java/入门/Java/高级/泛型/练习.md
+            - 后端/Java/入门/Java/高级/泛型/继承.md
+          - 集合:
+            - 后端/Java/入门/Java/高级/集合/List接口
+            - 后端/Java/入门/Java/高级/集合/Collections工具类.md
+            - 后端/Java/入门/Java/高级/集合/Collection接口方法.md
+            - 后端/Java/入门/Java/高级/集合/For each.md
+            - 后端/Java/入门/Java/高级/集合/List接口.md
+            - 后端/Java/入门/Java/高级/集合/Map概述.md
+            - 后端/Java/入门/Java/高级/集合/Properties性质.md
+            - 后端/Java/入门/Java/高级/集合/TreeMap演示.md
+            - 后端/Java/入门/Java/高级/集合/练习.md
+            - 后端/Java/入门/Java/高级/集合/集合概述.md
+          - 枚举和注解:
+            - 后端/Java/入门/Java/高级/枚举和注解/枚举.md
+            - 后端/Java/入门/Java/高级/枚举和注解/注解.md
+          - 网络编程:
+            - 后端/Java/入门/Java/高级/网络编程/TCP网络.md
+            - 后端/Java/入门/Java/高级/网络编程/UDP网络编程.md
+            - 后端/Java/入门/Java/高级/网络编程/URL网络编程.md
+            - 后端/Java/入门/Java/高级/网络编程/网络编程概述.md
+            - 后端/Java/入门/Java/高级/网络编程/通信要素1IP和端口号.md
+            - 后端/Java/入门/Java/高级/网络编程/通信要素2网络协议.md
+          - 补充:    
+            - 后端/Java/入门/Java/高级/补充/序列化问题.md
+            - 后端/Java/入门/Java/高级/补充/耦合度.md
       - Rust:
         - 入门:
           - 后端/Rust/入门/1. 认识Rust.md
@@ -108,9 +235,9 @@ nav:
           - 后端/Rust/入门/12. 项目实战-搜索关键词.md
         - 后端/Rust/Rust.md
         - 后端/Rust/发布到crates.io.md
-  - 其他:
+  - Others:
       - others/google账号无法登录.md
-  - 笔记:
+  - CourseNotes:
     - 大学笔记/index.md
     - 软件工程:
       - 大学笔记/notes/软件工程/1-软件工程学简介.md
@@ -355,7 +482,8 @@ nav:
       - 大学笔记/notes/黑客基础/4-文件上传漏洞lowmedium.md
       - 大学笔记/notes/黑客基础/5.1-文件上传漏洞（网站）.md
       - 大学笔记/notes/黑客基础/5.2-弱口令爆破.md
-  
+  - Web3:
+      - https://sonichen.github.io/Web3Journey/
 # [UI]
 ## [top]
 theme:
