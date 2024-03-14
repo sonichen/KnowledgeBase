@@ -7,70 +7,27 @@ site_description: Write something about CS.
 # [Navigtion]
 nav:
   - Home: index.html
-        
-  - Tools:
-      - 工具/onenote导出markdown.md
-      - Docker:
-        - 工具/docker/Docker入门.md
-      - Nginx:
-        - 工具/nginx/nginx入门.md
-      - Git:
-        - 工具/git/git简单操作.md
-        - 工具/git/还原原仓库内容到修改的fork仓库.md
-      - PPT:
-        - 工具/PPT/notes/PPT/01基本操作.md
-        - 工具/PPT/notes/PPT/02字体.md
-        - 工具/PPT/notes/PPT/03形状.md
-        - 工具/PPT/notes/PPT/04图片.md
-        - 工具/PPT/notes/PPT/05配色.md
-        - 工具/PPT/notes/PPT/06排版.md
-        - 工具/PPT/notes/PPT/07动画.md
-        - 工具/PPT/notes/PPT/08工作性PPT.md
-      - Version Control:
-        - 工具/版本控制/DVC.md
-        - 工具/版本控制/QuiltData.md
-      - 敏感信息扫描:
-        - 工具/敏感信息搜索/sensleak.md
-        - 工具/敏感信息搜索/gitleaks.md
-      - 博客搭建:
-        - 工具/博客搭建/mkdocs.md
-        - 工具/博客搭建/VuePress.md
-        - 工具/博客搭建/WordPress.md
   - Frontend:
-      - Vue:
-        - 前端/Vue/Vue2后台管理系统.md
-        - 前端/Vue/Vue3安装.md
-        - 前端/Vue/vscode生成vue3模板.md
-      - React:
-        - 前端/React/01.初认React.md
-        - 前端/React/02.构建项目.md
-        - 前端/React/03.JSX基础.md
-        - 前端/React/04.事件绑定.md
-        - 前端/React/05.组件基础使用.md
-        - 前端/React/06.useState基础使用.md
-        - 前端/React/07.基础样式控制.md
-        - 前端/React/08.案例_评论.md
-      - Basic:
-          - HTML:
-              - 前端/HTML_CSS/note/HTML/查阅文档.md
-              - 前端/HTML_CSS/note/HTML/HTML概述和认识语法.md
-              - 前端/HTML_CSS/note/HTML/列表标签.md
-              - 前端/HTML_CSS/note/HTML/常用标签.md              
-              - 前端/HTML_CSS/note/HTML/注解和特殊字符.md
-              - 前端/HTML_CSS/note/HTML/表单标签.md
-              - 前端/HTML_CSS/note/HTML/表格标签.md
-          - CSS:
-            - 前端/HTML_CSS/note/CSS/CSS书写顺序.md
-            - 前端/HTML_CSS/note/CSS/CSS基本知识.md
-            - 前端/HTML_CSS/note/CSS/CSS基础选择器.md
-            - 前端/HTML_CSS/note/CSS/CSS的三大特性.md
-            - 前端/HTML_CSS/note/CSS/CSS的元素显示模式.md
-            - 前端/HTML_CSS/note/CSS/CSS的复合选择器.md
-            - 前端/HTML_CSS/note/CSS/CSS的背景.md
-            - 前端/HTML_CSS/note/CSS/CSS盒子模型学习.md
-            - 前端/HTML_CSS/note/CSS/圆角边框.md
-            - 前端/HTML_CSS/note/CSS/浮动.md
-            - 前端/HTML_CSS/note/CSS/设置字体、文本样式.md
+      - HTML:
+        - 前端/HTML_CSS/note/HTML/查阅文档.md
+        - 前端/HTML_CSS/note/HTML/HTML概述和认识语法.md
+        - 前端/HTML_CSS/note/HTML/列表标签.md
+        - 前端/HTML_CSS/note/HTML/常用标签.md              
+        - 前端/HTML_CSS/note/HTML/注解和特殊字符.md
+        - 前端/HTML_CSS/note/HTML/表单标签.md
+        - 前端/HTML_CSS/note/HTML/表格标签.md
+      - CSS:
+        - 前端/HTML_CSS/note/CSS/CSS书写顺序.md
+        - 前端/HTML_CSS/note/CSS/CSS基本知识.md
+        - 前端/HTML_CSS/note/CSS/CSS基础选择器.md
+        - 前端/HTML_CSS/note/CSS/CSS的三大特性.md
+        - 前端/HTML_CSS/note/CSS/CSS的元素显示模式.md
+        - 前端/HTML_CSS/note/CSS/CSS的复合选择器.md
+        - 前端/HTML_CSS/note/CSS/CSS的背景.md
+        - 前端/HTML_CSS/note/CSS/CSS盒子模型学习.md
+        - 前端/HTML_CSS/note/CSS/圆角边框.md
+        - 前端/HTML_CSS/note/CSS/浮动.md
+        - 前端/HTML_CSS/note/CSS/设置字体、文本样式.md
       - JavaScript:
         - 前端/JavaScript/0.note.md
         - 前端/JavaScript/01.JavaScript介绍.md
@@ -86,11 +43,30 @@ nav:
         - 前端/JavaScript/11.操作DOM对象.md
         - 前端/JavaScript/12.表单.md
         - 前端/JavaScript/13.jQuery.md
-  - Database:
-      - SQL:
-        - Storage/SQL基础.md
-        - Storage/MySQL安装和SQLyog使用.md
-        - Storage/MySQL基本操作回顾.md
+      - TypeScript:
+        - 前端/TypeScript/基础/01简介.md
+        - 前端/TypeScript/基础/02开发环境搭建.md
+        - 前端/TypeScript/基础/03类型.md
+        - 前端/TypeScript/基础/04面向对象.md
+        - 前端/TypeScript/基础/05类.md
+        - 前端/TypeScript/基础/06构造函数和this.md
+        - 前端/TypeScript/基础/07继承和抽象类.md
+        - 前端/TypeScript/基础/08接口.md
+        - 前端/TypeScript/基础/09属性的封装.md
+        - 前端/TypeScript/基础/10泛型.md
+      - Vue:
+        - 前端/Vue/Vue2后台管理系统.md
+        - 前端/Vue/Vue3安装.md
+        - 前端/Vue/vscode生成vue3模板.md
+      - React:
+        - 前端/React/01.初认React.md
+        - 前端/React/02.构建项目.md
+        - 前端/React/03.JSX基础.md
+        - 前端/React/04.事件绑定.md
+        - 前端/React/05.组件基础使用.md
+        - 前端/React/06.useState基础使用.md
+        - 前端/React/07.基础样式控制.md
+        - 前端/React/08.案例_评论.md
   - Backend:
       - Java:
         - 后端/Java/Java环境服务器配置.md
@@ -233,8 +209,22 @@ nav:
           - 后端/Rust/入门/6. 枚举-option-match和if let.md
           - 后端/Rust/入门/7. Package和Crate定义module.md
           - 后端/Rust/入门/12. 项目实战-搜索关键词.md
-        - 后端/Rust/Rust.md
-        - 后端/Rust/发布到crates.io.md
+          - 后端/Rust/Rust.md
+          - 后端/Rust/发布到crates.io.md
+      - NestJS:
+        - 后端/NestJS/01介绍.md
+      - Docker:
+        - 后端/docker/Docker入门.md
+      - Nginx:
+        - 后端/nginx/nginx入门.md
+      - Git:
+        - 后端/git/git简单操作.md
+        - 后端/git/还原原仓库内容到修改的fork仓库.md
+  - Database:
+      - SQL:
+        - Storage/SQL基础.md
+        - Storage/MySQL安装和SQLyog使用.md
+        - Storage/MySQL基本操作回顾.md
   - Others:
       - others/google账号无法登录.md
   - CourseNotes:
@@ -482,6 +472,27 @@ nav:
       - 大学笔记/notes/黑客基础/4-文件上传漏洞lowmedium.md
       - 大学笔记/notes/黑客基础/5.1-文件上传漏洞（网站）.md
       - 大学笔记/notes/黑客基础/5.2-弱口令爆破.md
+  - Tools:
+      - 工具/onenote导出markdown.md
+      - PPT:
+        - 工具/PPT/notes/PPT/01基本操作.md
+        - 工具/PPT/notes/PPT/02字体.md
+        - 工具/PPT/notes/PPT/03形状.md
+        - 工具/PPT/notes/PPT/04图片.md
+        - 工具/PPT/notes/PPT/05配色.md
+        - 工具/PPT/notes/PPT/06排版.md
+        - 工具/PPT/notes/PPT/07动画.md
+        - 工具/PPT/notes/PPT/08工作性PPT.md
+      - Version Control:
+        - 工具/版本控制/DVC.md
+        - 工具/版本控制/QuiltData.md
+      - 敏感信息扫描:
+        - 工具/敏感信息搜索/sensleak.md
+        - 工具/敏感信息搜索/gitleaks.md
+      - 博客搭建:
+        - 工具/博客搭建/mkdocs.md
+        - 工具/博客搭建/VuePress.md
+        - 工具/博客搭建/WordPress.md
   - Web3:
       - https://sonichen.github.io/Web3Journey/
 # [UI]
