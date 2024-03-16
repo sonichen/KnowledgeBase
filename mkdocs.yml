@@ -7,68 +7,29 @@ site_description: Write something about CS.
 # [Navigtion]
 nav:
   - Home: index.html
-  - Frontend:
-      - HTML:
-        - 前端/HTML_CSS/note/HTML/查阅文档.md
-        - 前端/HTML_CSS/note/HTML/HTML概述和认识语法.md
-        - 前端/HTML_CSS/note/HTML/列表标签.md
-        - 前端/HTML_CSS/note/HTML/常用标签.md              
-        - 前端/HTML_CSS/note/HTML/注解和特殊字符.md
-        - 前端/HTML_CSS/note/HTML/表单标签.md
-        - 前端/HTML_CSS/note/HTML/表格标签.md
-      - CSS:
-        - 前端/HTML_CSS/note/CSS/CSS书写顺序.md
-        - 前端/HTML_CSS/note/CSS/CSS基本知识.md
-        - 前端/HTML_CSS/note/CSS/CSS基础选择器.md
-        - 前端/HTML_CSS/note/CSS/CSS的三大特性.md
-        - 前端/HTML_CSS/note/CSS/CSS的元素显示模式.md
-        - 前端/HTML_CSS/note/CSS/CSS的复合选择器.md
-        - 前端/HTML_CSS/note/CSS/CSS的背景.md
-        - 前端/HTML_CSS/note/CSS/CSS盒子模型学习.md
-        - 前端/HTML_CSS/note/CSS/圆角边框.md
-        - 前端/HTML_CSS/note/CSS/浮动.md
-        - 前端/HTML_CSS/note/CSS/设置字体、文本样式.md
-      - JavaScript:
-        - 前端/JavaScript/0.note.md
-        - 前端/JavaScript/01.JavaScript介绍.md
-        - 前端/JavaScript/02.HelloWorld.md
-        - 前端/JavaScript/03.基本语法.md
-        - 前端/JavaScript/04.严格检查模式.md
-        - 前端/JavaScript/05.数据类型.md
-        - 前端/JavaScript/06.流程控制.md
-        - 前端/JavaScript/07.函数.md
-        - 前端/JavaScript/08.内部对象.md
-        - 前端/JavaScript/09.面对对象编程.md
-        - 前端/JavaScript/10.操作BOM对象.md
-        - 前端/JavaScript/11.操作DOM对象.md
-        - 前端/JavaScript/12.表单.md
-        - 前端/JavaScript/13.jQuery.md
-      - TypeScript:
-        - 前端/TypeScript/基础/01简介.md
-        - 前端/TypeScript/基础/02开发环境搭建.md
-        - 前端/TypeScript/基础/03类型.md
-        - 前端/TypeScript/基础/04面向对象.md
-        - 前端/TypeScript/基础/05类.md
-        - 前端/TypeScript/基础/06构造函数和this.md
-        - 前端/TypeScript/基础/07继承和抽象类.md
-        - 前端/TypeScript/基础/08接口.md
-        - 前端/TypeScript/基础/09属性的封装.md
-        - 前端/TypeScript/基础/10泛型.md
-      - Vue:
-        - 前端/Vue/Vue2后台管理系统.md
-        - 前端/Vue/Vue3安装.md
-        - 前端/Vue/vscode生成vue3模板.md
-      - React:
-        - 前端/React/01.初认React.md
-        - 前端/React/02.构建项目.md
-        - 前端/React/03.JSX基础.md
-        - 前端/React/04.事件绑定.md
-        - 前端/React/05.组件基础使用.md
-        - 前端/React/06.useState基础使用.md
-        - 前端/React/07.基础样式控制.md
-        - 前端/React/08.案例_评论.md
   - Backend:
-      - Java:
+     - Basic:
+       - 后端/basic/AOP&IoC&DI.md
+       - 后端/basic/CICD.md
+       - 后端/basic/Fintech.md
+       - 后端/basic/HTTPRequest.md
+       - 后端/basic/JavaWeb框架分析.md
+       - 后端/basic/MVC设计与其他设计.md
+       - 后端/basic/SpringMVC详解.md
+       - 后端/basic/UI.md
+       - 后端/basic/前端框架对比.md
+       - 后端/basic/加密.md
+       - 后端/basic/基础概念.md
+       - 后端/basic/如何提供API以及API类型.md
+       - 后端/basic/常用设计模式.md
+       - 后端/basic/数据库操作.md
+       - 后端/basic/测试.md
+       - 后端/basic/算法和数据结构.md
+       - 后端/basic/语言特性.md
+       - 后端/basic/身份授权.md
+       - 后端/basic/软件开发.md
+       - 后端/basic/部署问题.md
+     - Java:
         - 后端/Java/Java环境服务器配置.md
         - 后端/Java/面试八股文(2022).md
         - 后端/Java/Web环境搭建.md
@@ -199,7 +160,7 @@ nav:
           - 补充:    
             - 后端/Java/入门/Java/高级/补充/序列化问题.md
             - 后端/Java/入门/Java/高级/补充/耦合度.md
-      - Rust:
+     - Rust:
         - 入门:
           - 后端/Rust/入门/1. 认识Rust.md
           - 后端/Rust/入门/2. Rust入门猜数游戏案例.md
@@ -211,15 +172,75 @@ nav:
           - 后端/Rust/入门/12. 项目实战-搜索关键词.md
           - 后端/Rust/Rust.md
           - 后端/Rust/发布到crates.io.md
-      - NestJS:
+     - NestJS:
         - 后端/NestJS/01介绍.md
-      - Docker:
+     - Docker:
         - 后端/docker/Docker入门.md
-      - Nginx:
+     - Nginx:
         - 后端/nginx/nginx入门.md
-      - Git:
+     - Git:
         - 后端/git/git简单操作.md
         - 后端/git/还原原仓库内容到修改的fork仓库.md
+  - Frontend:
+      - HTML:
+        - 前端/HTML_CSS/note/HTML/查阅文档.md
+        - 前端/HTML_CSS/note/HTML/HTML概述和认识语法.md
+        - 前端/HTML_CSS/note/HTML/列表标签.md
+        - 前端/HTML_CSS/note/HTML/常用标签.md              
+        - 前端/HTML_CSS/note/HTML/注解和特殊字符.md
+        - 前端/HTML_CSS/note/HTML/表单标签.md
+        - 前端/HTML_CSS/note/HTML/表格标签.md
+      - CSS:
+        - 前端/HTML_CSS/note/CSS/CSS书写顺序.md
+        - 前端/HTML_CSS/note/CSS/CSS基本知识.md
+        - 前端/HTML_CSS/note/CSS/CSS基础选择器.md
+        - 前端/HTML_CSS/note/CSS/CSS的三大特性.md
+        - 前端/HTML_CSS/note/CSS/CSS的元素显示模式.md
+        - 前端/HTML_CSS/note/CSS/CSS的复合选择器.md
+        - 前端/HTML_CSS/note/CSS/CSS的背景.md
+        - 前端/HTML_CSS/note/CSS/CSS盒子模型学习.md
+        - 前端/HTML_CSS/note/CSS/圆角边框.md
+        - 前端/HTML_CSS/note/CSS/浮动.md
+        - 前端/HTML_CSS/note/CSS/设置字体、文本样式.md
+      - JavaScript:
+        - 前端/JavaScript/0.note.md
+        - 前端/JavaScript/01.JavaScript介绍.md
+        - 前端/JavaScript/02.HelloWorld.md
+        - 前端/JavaScript/03.基本语法.md
+        - 前端/JavaScript/04.严格检查模式.md
+        - 前端/JavaScript/05.数据类型.md
+        - 前端/JavaScript/06.流程控制.md
+        - 前端/JavaScript/07.函数.md
+        - 前端/JavaScript/08.内部对象.md
+        - 前端/JavaScript/09.面对对象编程.md
+        - 前端/JavaScript/10.操作BOM对象.md
+        - 前端/JavaScript/11.操作DOM对象.md
+        - 前端/JavaScript/12.表单.md
+        - 前端/JavaScript/13.jQuery.md
+      - TypeScript:
+        - 前端/TypeScript/基础/01简介.md
+        - 前端/TypeScript/基础/02开发环境搭建.md
+        - 前端/TypeScript/基础/03类型.md
+        - 前端/TypeScript/基础/04面向对象.md
+        - 前端/TypeScript/基础/05类.md
+        - 前端/TypeScript/基础/06构造函数和this.md
+        - 前端/TypeScript/基础/07继承和抽象类.md
+        - 前端/TypeScript/基础/08接口.md
+        - 前端/TypeScript/基础/09属性的封装.md
+        - 前端/TypeScript/基础/10泛型.md
+      - Vue:
+        - 前端/Vue/Vue2后台管理系统.md
+        - 前端/Vue/Vue3安装.md
+        - 前端/Vue/vscode生成vue3模板.md
+      - React:
+        - 前端/React/01.初认React.md
+        - 前端/React/02.构建项目.md
+        - 前端/React/03.JSX基础.md
+        - 前端/React/04.事件绑定.md
+        - 前端/React/05.组件基础使用.md
+        - 前端/React/06.useState基础使用.md
+        - 前端/React/07.基础样式控制.md
+        - 前端/React/08.案例_评论.md
   - Database:
       - SQL:
         - Storage/SQL基础.md
@@ -493,6 +514,9 @@ nav:
         - 工具/博客搭建/mkdocs.md
         - 工具/博客搭建/VuePress.md
         - 工具/博客搭建/WordPress.md
+      - Vscode插件:
+        - 工具/vscode/RESTClient测试接口.md
+        - 工具/vscode/VScode快速连接数据库.md
   - Web3:
       - https://sonichen.github.io/Web3Journey/
 # [UI]
