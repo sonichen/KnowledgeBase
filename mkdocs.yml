@@ -1,6 +1,6 @@
 # [Info]
-site_name: notes # 左上角标题
-site_url: https://github.com/sonichen/notes
+site_name: CS KnowledgeBase # 左上角标题
+site_url: https://github.com/sonichen/knowledgebase
 site_author: Soni
 site_description: Write something about CS.
 
