@@ -1,0 +1,46 @@
+加载数据集
+
+```
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/nation.tbl'   INTO TABLE NATION   FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/customer.tbl' INTO TABLE CUSTOMER FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/orders.tbl'   INTO TABLE ORDERS   FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/lineitem.tbl' INTO TABLE LINEITEM FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/partsupp.tbl' INTO TABLE PARTSUPP FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/part.tbl'     INTO TABLE PART     FIELDS TERMINATED BY '|'   LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/region.tbl'   INTO TABLE REGION   FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'D:/Workplace/vm/D28F45F9-0A2F-4557-B69A-D492284C8CB0-TPC-H-Tool/TPC-H V3.0.1/dbgen/supplier.tbl' INTO TABLE SUPPLIER FIELDS TERMINATED BY '|'  LINES TERMINATED BY '\r\n';
+```
+
+报错
+
+```
+ERROR3948: Loading local data is disabled - this must be enabled on both the client and server sides
+```
+
+解决步骤
+
+1.检查
+
+```
+show global variables like 'local_infile';
+```
+
+如果是OFF，说明不可以用，需要打开
+
+```
+set global local_infile=1;
+```
+
+退出进入检查
+
+```
+show global variables like 'local_infile';
+```
+
+是否value为on
+
+尝试，即可成功
+
+
+
