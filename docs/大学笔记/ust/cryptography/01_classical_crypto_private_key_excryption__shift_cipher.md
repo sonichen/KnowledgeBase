@@ -1,14 +1,38 @@
+## Cryptography
+
+历史上，密码学只专注于确保双方之间使用“code”提前共享秘密信息，这就是private-key encryption
+
+现代密码学涉及的方面更多
+
+– Data integrity, authentication, protocols, …
+
+– The *public-key setting*
+
+– Group communication
+
+– More-complicated trust models
+
+– Foundations
+
+## Classical cryptography
+
+特点：完全依赖于在通信各方之间预先共享的秘密信息（一个密钥）
+
+*Private-key cryptography* – aka secret-key / shared-key / symmetric-key cryptography
+
 ## Private-key encryption
 
-场景：
+**场景**
+
+![image-20240511212800185](assets\image-20240511212800185.png)
 
 Bob和Alice通信，Bob提前和Alice共享一个key。
 
-Bob发送信息m时，用加密函数Enc k(m) ->c得到加密后的密文c，然后传给Alice。
+Bob发送信息m时，用加密函数得到加密后的密文c，然后传给Alice。
 
-Alice收到密文c，用key对密文进行解密m:=Dec k(c)，得到信息m。
+Alice收到密文c，用key对密文进行解密，得到信息m。
 
-定义
+**定义**
 
 A *private-key encryption scheme* 由**信息空间M**和**算法（Gen, End, Dec）**定义
 
@@ -18,51 +42,39 @@ A *private-key encryption scheme* 由**信息空间M**和**算法（Gen, End, De
 
 **对于all m∈M和Gen生成的密钥k，都有Dec k(End k (m)) = m**
 
+![image-20240511213047511](assets\image-20240511213047511.png)
+
+
+
 
 
 ## Kerckhoffs’s principle
 
-• 加密方案不是秘密 
+- *The encryption scheme* is not secret 加密方案不是秘密 ：攻击者了解加密方案，但唯一的秘密是密钥，密钥必须随机选择，并保持秘密 
 
-– 攻击者了解加密方案 
+- 支持这一原则的论点
 
-– 唯一的秘密是密钥
+  - 密钥比算法容易保密
 
- – 密钥必须随机选择，并保持秘密 
+  - 密钥比算法容易改变
 
-• 支持这一原则的论点
-
- – 比算法更容易保密密钥 
-
-– 比改变算法更容易改变密钥
-
- – 标准化 
-
-• 部署的便利性 
-
-• 公开审查
+  - 标准化：部署便利，公开审查 
 
 
 
 ## The shift cipher
 
-案例：
+### Basic
 
-考虑加密英语文本
-
-a-》0， b->1, z->25
-
-密钥k∈K={0,...,25}
+**案例**：考虑加密英语文本：a->0，b->1,..., z->25；密钥k∈K={0,...,25}
 
 要使用密钥k进行加密，请将明文的每个字母移动k个位置（带行）
 
-eg
-
-因为c代表2，所以都移动两位
+eg：因为c代表2，所以都移动两位
 
 ![image-20240510111250508](assets\image-20240510111250508.png)
 
-Formally
+#### 定义
 
 M是英文小写
 
@@ -72,17 +84,14 @@ Enc k(m1,...,mt)=输出密文c1,...ct, 并且ci := [mi + k mod 26]
 
 Deck(c1…ct): 输出m1…mt, where  mi := [ci - k mod 26]
 
+#### Security
 
+不安全！--- 只有26个keys
 
-### 安全性
+- 给定一个密文，尝试用每一个可能的密钥解密
+- 只有一种可能性将“有意义”
 
-不安全！
-
-只有26个keys
-
--给定一个密文，尝试用每一个可能的密钥解密-只有一种可能性将“有意义”
-
-• Example of a “brute-force” or “exhaustive search” attack
+Example of a “brute-force” or “exhaustive search” attack
 
 
 
@@ -90,34 +99,34 @@ Deck(c1…ct): 输出m1…mt, where  mi := [ci - k mod 26]
 
 ### Byte-wise shift cipher
 
-- 使用alphabet of *bytes*而不是（英文，小写字母）-原生地处理任意数据！
-- 使用XOR而不是模块化的加法
+- 使用alphabet of *bytes*而不是（英文，小写字母），可以处理任意数据！
+- 使用XOR异或而不是modular addition
 
-
-
-定义
+#### 定义
 
 ![image-20240510112818105](assets\image-20240510112818105.png)
 
-是否安全
+#### Security 
 
-不安全！
+不安全！-- 只有256个可能的keys
 
-只有256个可能的keys
+- 给定一个密文，尝试用每一个可能的密钥进行解密
 
--给定一个密文，尝试用每一个可能的密钥进行解密
+- 如果密文足够长，只有一个明文将“有意义”
 
--如果密文足够长，只有一个明文将“有意义”
+思考，足够的密钥空间原理
 
-思考
+- 密钥空间必须足够大，以使穷举搜索攻击不切实际
 
-足够的密钥空间原理—
+- 技术：只有当明文足够长时才成立
 
-—密钥空间必须足够大，以使穷举搜索攻击不切实际
+#### Code
 
-–技术：只有当明文足够长时才成立
+![image-20240511214137068](assets\image-20240511214137068.png)
 
 ### The Vigenère cipher
+
+#### 定义
 
 1. **密钥是多个字符，而不仅仅是一个字符**：维吉尼亚密码使用的密钥由多个字符组成，而不是单个字符。
 2. **加密过程**：
@@ -127,22 +136,15 @@ Deck(c1…ct): 输出m1…mt, where  mi := [ci - k mod 26]
 3. **解密过程**：
    - 解密只是加密过程的逆向操作。
 
-维吉尼亚密码是由d个字母序列给定的密钥ki（i∈[1,d])，ki确定第i+td（t为整数）个字母的移位次数。
- 现代维吉尼亚密码代换表如下，第一行为密钥，第一列为明文，某明文对应密钥加密产生的密文即为该行该列处的字母。
+维吉尼亚密码是由d个字母序列给定的密钥ki（i∈[1,d])，ki确定第i+td（t为整数）个字母的移位次数。现代维吉尼亚密码代换表如下，**第一行为密钥，第一列为明文，某明文对应密钥加密产生的密文即为该行该列处的字母。**
 
 ![image-20240510113945712](assets\image-20240510113945712.png)
 
 ![image-20240510114004649](assets\image-20240510114004649.png)
 
-t-c：v
+t-c：v；e-a: e；l-f: q；...
 
-e-a: e
-
-l-f: q
-
-...
-
-安全性
+#### Security
 
 1. **密钥空间的大小**：
    - 如果密钥是由英文字母组成的14个字符的字符串，那么密钥空间的大小为2614，约等于266。
@@ -153,7 +155,7 @@ l-f: q
    - 但是，这并不意味着维吉尼亚密码是安全的。
    - 其他攻击方法，如频率分析等，仍然可能会成功破解密码。
 
-攻击
+#### Attacking
 
 **针对第一个 "流" 的分析**：
 
@@ -174,7 +176,7 @@ l-f: q
 
 - 这种方法有些随意，并没有充分利用所有可用的信息，因此可能并不是最有效的攻击方式
 
-A better attack (high level) 
+#### A better attack (high level) 
 
 1. **字母频率的分析**：
    - 让 pi（0 ≤ i ≤ 25）表示正常英文明文中第i个英文字母的频率。
@@ -192,16 +194,14 @@ A better attack (high level)
 
 ## 补充
 
-
-
 ### Modular arithmetic
+
+TODO
 
 - 当且仅当N除以x-y时，可以写x=y mod N【也就是N能够整除(x - y)】
 - [x mod N] = x除以N的余数【】
 
 比如
-
-todo?
 
 25 = 35 mod 10（35/10余数是）
 
@@ -227,5 +227,5 @@ Characters often represented in ASCII
 
 – 1 byte/char = 2 hex digits/char
 
-
+![image-20240511214628671](assets\image-20240511214628671.png)
 
